@@ -10,7 +10,7 @@ public class StateController : MonoBehaviour
 
     [HideInInspector] public float m_stateTimeElapsed;
     [HideInInspector] public NavMeshAgent navMeshAgent;
-
+    [HideInInspector] public Transform chaseTarget;
 
 
     void Awake()
