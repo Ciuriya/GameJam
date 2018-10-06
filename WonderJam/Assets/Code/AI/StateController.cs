@@ -1,15 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class StateController : MonoBehaviour
 {
 	public State m_currentState;
 	public bool m_drawGizmos;
 
-	[HideInInspector] public float m_stateTimeElapsed;
+    [HideInInspector] public float m_stateTimeElapsed;
+    [HideInInspector] public NavMeshAgent navMeshAgent;
 
-	private void Update()
+
+
+    void Awake()
+    {
+        navMeshAgent = GetComponent<NavMeshAgent>();
+    }
+
+    protected void Update()
 	{
 		m_currentState.UpdateState(this);
 	}
