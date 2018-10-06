@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 222326314046785886}
   - component: {fileID: 114626426009419344}
   m_Layer: 5
-  m_Name: WoodSprite
+  m_Name: Wood Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 222222104001546758}
   - component: {fileID: 114493514268402660}
   - component: {fileID: 114232332409853176}
+  - component: {fileID: 114317589514661360}
   m_Layer: 5
   m_Name: Stone
   m_TagString: Untagged
@@ -91,7 +92,7 @@ GameObject:
   - component: {fileID: 222268175020661450}
   - component: {fileID: 114592874673251012}
   m_Layer: 5
-  m_Name: StoneSprite
+  m_Name: Stone Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +127,7 @@ GameObject:
   - component: {fileID: 222139384386076964}
   - component: {fileID: 114843092230454036}
   m_Layer: 5
-  m_Name: WoodSprite
+  m_Name: Food Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,6 +144,7 @@ GameObject:
   - component: {fileID: 222265915841178522}
   - component: {fileID: 114669345075668582}
   - component: {fileID: 114949608241884228}
+  - component: {fileID: 114531161256638338}
   m_Layer: 5
   m_Name: Wood
   m_TagString: Untagged
@@ -161,7 +163,7 @@ GameObject:
   - component: {fileID: 222230578756759690}
   - component: {fileID: 114715729315184596}
   m_Layer: 5
-  m_Name: GoldSprite
+  m_Name: Gold Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,6 +180,7 @@ GameObject:
   - component: {fileID: 222797920342076306}
   - component: {fileID: 114655385393133804}
   - component: {fileID: 114054403863228578}
+  - component: {fileID: 114273479004891412}
   m_Layer: 5
   m_Name: Food Fill
   m_TagString: Untagged
@@ -196,6 +199,7 @@ GameObject:
   - component: {fileID: 222591266195036674}
   - component: {fileID: 114441806858576312}
   - component: {fileID: 114835635049056572}
+  - component: {fileID: 114027020796086446}
   m_Layer: 5
   m_Name: HP Fill
   m_TagString: Untagged
@@ -249,7 +253,7 @@ GameObject:
   - component: {fileID: 222285340238078256}
   - component: {fileID: 114584894092905446}
   m_Layer: 5
-  m_Name: WoodSprite
+  m_Name: HP Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,6 +270,7 @@ GameObject:
   - component: {fileID: 222536492943273216}
   - component: {fileID: 114258608861110668}
   - component: {fileID: 114303118739380828}
+  - component: {fileID: 114657820171510886}
   m_Layer: 5
   m_Name: Gold
   m_TagString: Untagged
@@ -307,6 +312,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114027020796086446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463306174619786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: ac7b11a68cbcf6e42a0daed96f5aa7dc, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114835635049056572}
+        m_MethodName: UpdateFill
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114054403863228578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,15 +354,15 @@ MonoBehaviour:
   m_fillAmount:
     m_useConstant: 0
     m_constantValue: 0
-    m_variable: {fileID: 11400000, guid: 66477e3b7f81cc64886264403c63a032, type: 2}
+    m_variable: {fileID: 11400000, guid: fbee40ff204fa304fb5bfa71323151b3, type: 2}
   m_minimumFill:
     m_useConstant: 1
     m_constantValue: 0
     m_variable: {fileID: 0}
   m_maximumFill:
-    m_useConstant: 1
+    m_useConstant: 0
     m_constantValue: 100
-    m_variable: {fileID: 0}
+    m_variable: {fileID: 11400000, guid: a838f3bbd98f96c45bb953d78d9d87d3, type: 2}
   m_image: {fileID: 114655385393133804}
 --- !u!114 &114118915448275292
 MonoBehaviour:
@@ -370,7 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_text: {fileID: 114493514268402660}
-  m_variable: {fileID: 11400000, guid: 66477e3b7f81cc64886264403c63a032, type: 2}
+  m_variable: {fileID: 11400000, guid: e062ab0e091a8424eafcd46fc523e6fe, type: 2}
 --- !u!114 &114258608861110668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,7 +436,35 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 999999
+  m_Text: 789
+--- !u!114 &114273479004891412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456237394629074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 9a36421bead9bae43917076088ac4198, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114054403863228578}
+        m_MethodName: UpdateFill
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114303118739380828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -416,7 +477,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_text: {fileID: 114258608861110668}
-  m_variable: {fileID: 11400000, guid: 66477e3b7f81cc64886264403c63a032, type: 2}
+  m_variable: {fileID: 11400000, guid: af57c06bf7177024eaa1fcd31499cd75, type: 2}
+--- !u!114 &114317589514661360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135990459726266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: f6a1092de8ed8d64e85a89d2de240e2c, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114232332409853176}
+        m_MethodName: UpdateText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114441806858576312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,7 +530,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.75
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!114 &114451671243047138
@@ -503,7 +592,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 999999
+  m_Text: 456
 --- !u!114 &114517225581152594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -525,6 +614,34 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114531161256638338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365094544701904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 49629f19cceae9c4f89ba77b7248a30d, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114949608241884228}
+        m_MethodName: UpdateText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114535072920489080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -673,9 +790,37 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114657820171510886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823542543463692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: cec8438ce9b07ab4ea1667f0eb5695c9, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114303118739380828}
+        m_MethodName: UpdateText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114659446691828776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -735,7 +880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 999999
+  m_Text: 123
 --- !u!114 &114675060757882444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -860,9 +1005,9 @@ MonoBehaviour:
     m_constantValue: 0
     m_variable: {fileID: 0}
   m_maximumFill:
-    m_useConstant: 1
+    m_useConstant: 0
     m_constantValue: 100
-    m_variable: {fileID: 0}
+    m_variable: {fileID: 11400000, guid: dfd05abe95e80244f80da8aa4e9bbbe4, type: 2}
   m_image: {fileID: 114441806858576312}
 --- !u!114 &114843092230454036
 MonoBehaviour:
@@ -903,7 +1048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_text: {fileID: 114669345075668582}
-  m_variable: {fileID: 11400000, guid: 66477e3b7f81cc64886264403c63a032, type: 2}
+  m_variable: {fileID: 11400000, guid: fa402cd8d1171204daac1ae80ad44121, type: 2}
 --- !u!222 &222139384386076964
 CanvasRenderer:
   m_ObjectHideFlags: 1
