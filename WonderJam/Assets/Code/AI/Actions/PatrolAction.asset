@@ -8,9 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10743ab3a52f6614a984f1c840be47d5, type: 3}
-  m_Name: PlayerJumpSpeed
+  m_Script: {fileID: 11500000, guid: e996700c98cb13e4aa02ebc30be3046d, type: 3}
+  m_Name: PatrolAction
   m_EditorClassIdentifier: 
-  m_developerDescription: 
-  m_value: 7.5
-
+  wayPointsList:
+  - {fileID: 0}
+  - {fileID: 0}
+  nextWayPoint: 0
