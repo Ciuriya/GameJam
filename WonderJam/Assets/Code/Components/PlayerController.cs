@@ -10,7 +10,13 @@ public class PlayerController : PhysicsObject
     private float Direction;
     private float attacc;
     public SpriteRenderer spriterenderer;
+	public Damager m_damager;
 
+	void Awake()
+	{
+		m_damager = GetComponent<Damager>();
+		spriterenderer = GetComponent<SpriteRenderer>();
+	}
 
     protected override void ComputeVelocity()
     {
@@ -33,7 +39,6 @@ public class PlayerController : PhysicsObject
         // Hook with Animator
 
         Direction = Input.GetAxisRaw("Horizontal");
-        spriterenderer = GetComponent<SpriteRenderer>();
 
         if(Direction!=0)
         { 
@@ -56,22 +61,15 @@ public class PlayerController : PhysicsObject
         else
             animator.SetBool("isjumping", false);
 
-
-
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire1") && m_damager)
         {
-
-            animator.SetBool("isattacking", true);
+			if(m_damager.Damage())
+				animator.SetBool("isattacking", true);
 
         }
-        else if (Input.GetButtonUp("Fire2"))
+        else if (Input.GetButtonUp("Fire1") && m_damager)
         {
             animator.SetBool("isattacking", false);
         }
-            
-
-        
-        
-
     }
 }
