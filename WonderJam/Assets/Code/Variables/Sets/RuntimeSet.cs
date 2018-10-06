@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class RuntimeSet<T> : ScriptableObject
 {
-	private List<T> m_items = new List<T>();
+	public List<T> m_items = new List<T>();
 
 	public void Add(T p_item)
 	{
