@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1747489362883218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.43, y: 0.79, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8bcbf844f442de4c9541dc0fbc5b73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_goldInPockets: {fileID: 11400000, guid: af57c06bf7177024eaa1fcd31499cd75, type: 2}
   m_seasonModifier: {fileID: 11400000, guid: 57e6caca9fbfb824789016614a298bad, type: 2}
   m_RessourceCapacity: {fileID: 11400000, guid: a6a58b367f5f3074d99f48525d275414,
     type: 2}
@@ -59,6 +60,7 @@ MonoBehaviour:
     type: 2}
   m_RessourceGenerated: {fileID: 11400000, guid: 49629f19cceae9c4f89ba77b7248a30d,
     type: 2}
+  m_GoldUsed: {fileID: 11400000, guid: cec8438ce9b07ab4ea1667f0eb5695c9, type: 2}
 --- !u!212 &212389685612848378
 SpriteRenderer:
   m_ObjectHideFlags: 1
