@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4766700490449472}
   - component: {fileID: 212273781284442408}
-  - component: {fileID: 114566900552138628}
+  - component: {fileID: 114489429821304308}
   m_Layer: 0
   m_Name: Farm
   m_TagString: Untagged
@@ -35,13 +35,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1683988229501422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.452424, y: -1.0751705, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114566900552138628
+--- !u!114 &114489429821304308
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,16 +49,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1683988229501422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135035785441693438df5d5ef8241f1d, type: 3}
+  m_Script: {fileID: 11500000, guid: e8bcbf844f442de4c9541dc0fbc5b73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_farmLevel: {fileID: 11400000, guid: 2518bd0f727a7214188ee521648c2412, type: 2}
-  m_seasonModifier: {fileID: 11400000, guid: 57e6caca9fbfb824789016614a298bad, type: 2}
-  m_foodRessource: {fileID: 11400000, guid: fbee40ff204fa304fb5bfa71323151b3, type: 2}
-  m_foodMax: {fileID: 11400000, guid: a838f3bbd98f96c45bb953d78d9d87d3, type: 2}
-  m_goldInPockets: {fileID: 11400000, guid: af57c06bf7177024eaa1fcd31499cd75, type: 2}
-  m_GoldUsed: {fileID: 11400000, guid: cec8438ce9b07ab4ea1667f0eb5695c9, type: 2}
-  m_FoodGenerated: {fileID: 11400000, guid: 9a36421bead9bae43917076088ac4198, type: 2}
+  currentLevel: {fileID: 11400000, guid: 1598afe35abc79a40a0d83247a3b4aee, type: 2}
+  currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  buildingUpgratedEvent: {fileID: 11400000, guid: f95820350da50374a8cbfe3ab9112ca5,
+    type: 2}
 --- !u!212 &212273781284442408
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -94,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2bf4927f8c0cf9740891c173d486ba91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e83d164cfe6e7a84fab2d2abe444db20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
