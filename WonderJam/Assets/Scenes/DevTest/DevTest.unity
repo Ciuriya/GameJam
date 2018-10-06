@@ -335,10 +335,19 @@ MonoBehaviour:
   m_hurtbox: {fileID: 858842404}
   m_spriteRenderer: {fileID: 7868223}
   m_offset: {x: 0.32, y: 0}
-  m_damage: 15
+  m_damage:
+    m_useConstant: 1
+    m_constantValue: 10
+    m_variable: {fileID: 0}
   m_canDamage: 1
-  m_knockbackValue: 1
-  m_damageCooldown: 1
+  m_knockbackValue:
+    m_useConstant: 1
+    m_constantValue: 2
+    m_variable: {fileID: 0}
+  m_damageCooldown:
+    m_useConstant: 1
+    m_constantValue: 1
+    m_variable: {fileID: 0}
   m_hittableLayers:
     serializedVersion: 2
     m_Bits: 1
@@ -742,6 +751,21 @@ Prefab:
     - target: {fileID: 4165291588101628, guid: 08abcdda17171c94696a2e7f0a6e9262, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564183750742634, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: m_damage.m_constantValue
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564183750742634, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: m_knockbackValue.m_constantValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564183750742634, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: m_damageCooldown.m_constantValue
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08abcdda17171c94696a2e7f0a6e9262, type: 2}
