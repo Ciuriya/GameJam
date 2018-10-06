@@ -14,14 +14,14 @@ public class Damager : MonoBehaviour
 	private Vector2 m_currentOffset = new Vector2(0f, 0f);
 
 	[Tooltip("Damage inflicted by a hit of the damager.")]
-	public float m_damage;
+	public FloatReference m_damage;
 	public bool m_canDamage;
 
 	[Tooltip("Knockback amount.")]
-	public float m_knockbackValue;
+	public FloatReference m_knockbackValue;
 
 	[Tooltip("Time between hits.")]
-	public float m_damageCooldown;
+	public FloatReference m_damageCooldown;
 	private float m_lastHit;
 
 	[Tooltip("Layers this damager can hit.")]
@@ -58,7 +58,7 @@ public class Damager : MonoBehaviour
 	{
 		float time = Time.time * 1000;
 
-		return time < m_lastHit + m_damageCooldown * 1000;
+		return time < m_lastHit + m_damageCooldown.Value * 1000;
 	}
 
 	public bool Damage()
@@ -99,11 +99,11 @@ public class Damager : MonoBehaviour
 		if (health)
 		{
 			m_damageEvent.Invoke();
-			health.Damage(m_damage);
+			health.Damage(m_damage.Value);
 
 			if (p_rigid)
 			{
-				float force = m_knockbackValue * 2;
+				float force = m_knockbackValue.Value * 2;
 				Vector2 velocity = new Vector2(force * (m_spriteRenderer.flipX ? -1 : 1), force);
 
 				velocity.x *= (p_reverseKnockback ? -1 : 1);
