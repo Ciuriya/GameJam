@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Name: PlayerMaxSpeed
   m_EditorClassIdentifier: 
   m_developerDescription: 
+<<<<<<< HEAD
   m_value: 5
+=======
+  m_value: 6
+>>>>>>> develop
