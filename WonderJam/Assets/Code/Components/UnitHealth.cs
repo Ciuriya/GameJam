@@ -15,7 +15,6 @@ public class UnitHealth : MonoBehaviour
 	[Tooltip("The time after taking damage where the unit is immune to damage.")]
 	public float m_immunityWindow;
 	private float m_lastHit;
-	private Collider2D m_immuneOnNextCollision;
 
 	[Tooltip("Event called when the entity takes damage.")]
 	public UnityEvent m_damageEvent;
@@ -26,11 +25,6 @@ public class UnitHealth : MonoBehaviour
 	public bool IsImmune()
 	{
 		return Time.time * 1000 < m_lastHit + m_immunityWindow * 1000;
-	}
-
-	public void SetImmunityToNextCollision(Collider2D p_immuneToCollider)
-	{
-		m_immuneOnNextCollision = p_immuneToCollider;
 	}
 
 	private float GetHealth()
@@ -57,21 +51,12 @@ public class UnitHealth : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D p_collider)
 	{
-		if(tag == p_collider.collider.tag) return;
-
-		if (m_immuneOnNextCollision == p_collider.collider)
-		{
-			m_immuneOnNextCollision = null;
-			return;
-		}
+		if(tag == p_collider.collider.tag || p_collider.collider.CompareTag("Player")) return;
 
 		Damager damager = p_collider.collider.GetComponent<Damager>();
 
 		if(damager)
 		{
-			UnitHealth damagerHealth = GetComponent<UnitHealth>();
-			if (damagerHealth) damagerHealth.SetImmunityToNextCollision(p_collider.otherCollider);
-
 			bool reverseKnockback = true;
 			SpriteRenderer renderer = GetComponent<SpriteRenderer>();
 
