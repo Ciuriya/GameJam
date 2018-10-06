@@ -12,8 +12,5 @@ MonoBehaviour:
   m_Name: PlayerJumpSpeed
   m_EditorClassIdentifier: 
   m_developerDescription: 
-<<<<<<< HEAD
   m_value: 7.5
-=======
-  m_value: 7
->>>>>>> develop
+

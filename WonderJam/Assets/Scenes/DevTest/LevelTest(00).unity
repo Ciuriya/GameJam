@@ -156,13 +156,25 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300006, guid: a2062e2e30661834ab051ab505e62380,
+      objectReference: {fileID: 21300000, guid: 48c6fcac17c9b4e4ca3fc2a5e6f89d62,
         type: 3}
     - target: {fileID: 212444835131694200, guid: 08abcdda17171c94696a2e7f0a6e9262,
         type: 2}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114058050820198206, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: jumpSpeed.m_variable
+      value: 
+      objectReference: {fileID: 11400000, guid: 544863d867b752843822e08749d51614,
+        type: 2}
+    - target: {fileID: 114058050820198206, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: maxSpeed.m_variable
+      value: 
+      objectReference: {fileID: 11400000, guid: 423d463501b707144a12e5dbd4fc08e8,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08abcdda17171c94696a2e7f0a6e9262, type: 2}
   m_IsPrefabAsset: 0
