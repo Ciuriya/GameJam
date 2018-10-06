@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: PlayerMaxSpeed
   m_EditorClassIdentifier: 
   m_developerDescription: 
-  m_value: 0
+  m_value: 5
