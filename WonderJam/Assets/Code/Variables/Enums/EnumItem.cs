@@ -1,3 +1,3 @@
 ﻿using UnityEngine;
 
-public class EnumItem : ScriptableObject {}
+public abstract class EnumItem : ScriptableObject {}
