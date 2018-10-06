@@ -9,13 +9,19 @@ public class PlayerController : PhysicsObject
     public Animator animator;
     private float Direction;
     private float attacc;
-    public SpriteRenderer spriterenderer;
-	public Damager m_damager;
+    private SpriteRenderer spriterenderer;
+	private Damager m_damager;
+	private Vector2 m_knockback = Vector2.zero;
 
 	void Awake()
 	{
 		m_damager = GetComponent<Damager>();
 		spriterenderer = GetComponent<SpriteRenderer>();
+	}
+
+	public void Knockback(Vector2 p_knockback)
+	{
+		m_knockback = p_knockback;
 	}
 
     protected override void ComputeVelocity()
@@ -33,6 +39,12 @@ public class PlayerController : PhysicsObject
         {
             if (velocity.y > 0)velocity.y *= 0.5f;
         }
+
+		if (Mathf.Abs(m_knockback.x) + Mathf.Abs(m_knockback.y) >= 0.5f)
+		{
+			move = m_knockback;
+			m_knockback = new Vector2(m_knockback.x / 1.2f, m_knockback.y / 1.2f);
+		}
 
         targetVelocity = move * maxSpeed.Value;
 
