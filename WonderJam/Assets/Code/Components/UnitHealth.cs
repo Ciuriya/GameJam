@@ -57,7 +57,7 @@ public class UnitHealth : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D p_collider)
 	{
-		if(tag == p_collider.collider.tag || IsImmune() || p_collider.collider.CompareTag("Player")) return;
+		if(tag == p_collider.collider.tag) return;
 
 		if (m_immuneOnNextCollision == p_collider.collider)
 		{
@@ -69,8 +69,8 @@ public class UnitHealth : MonoBehaviour
 
 		if(damager)
 		{
-			UnitHealth damagedHealth = p_collider.otherCollider.GetComponent<UnitHealth>();
-			if (damagedHealth) damagedHealth.SetImmunityToNextCollision(p_collider.collider);
+			UnitHealth damagerHealth = GetComponent<UnitHealth>();
+			if (damagerHealth) damagerHealth.SetImmunityToNextCollision(p_collider.otherCollider);
 
 			bool reverseKnockback = true;
 			SpriteRenderer renderer = GetComponent<SpriteRenderer>();

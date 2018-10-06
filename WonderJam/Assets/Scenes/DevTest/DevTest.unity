@@ -752,21 +752,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114564183750742634, guid: 08abcdda17171c94696a2e7f0a6e9262,
-        type: 2}
-      propertyPath: m_damage.m_constantValue
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114564183750742634, guid: 08abcdda17171c94696a2e7f0a6e9262,
-        type: 2}
-      propertyPath: m_knockbackValue.m_constantValue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114564183750742634, guid: 08abcdda17171c94696a2e7f0a6e9262,
-        type: 2}
-      propertyPath: m_damageCooldown.m_constantValue
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08abcdda17171c94696a2e7f0a6e9262, type: 2}
   m_IsPrefabAsset: 0
