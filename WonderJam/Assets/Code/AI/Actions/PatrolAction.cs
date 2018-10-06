@@ -11,17 +11,12 @@ public class PatrolAction : Action {
 
     public override void Execute(StateController controller)
     {
-        controller.navMeshAgent.autoBraking = false;
         Patrol(controller);
     }
 
     private void Patrol(StateController controller)
     {
-        if (controller.wayPointsList.Length == 0)
-        {
-            return;
-        }
-        controller.navMeshAgent.destination = controller.wayPointsList[controller.nextWayPoint].position;
-        controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.wayPointsList.Length;
+       
     }
+
 }

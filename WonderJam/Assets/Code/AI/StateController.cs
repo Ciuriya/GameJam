@@ -7,20 +7,10 @@ public class StateController : MonoBehaviour
 {
 	public State m_currentState;
 	public bool m_drawGizmos;
-    public Transform[] wayPointsList;
-    public int nextWayPoint;
 
     [HideInInspector] public float m_stateTimeElapsed;
-    [HideInInspector] public NavMeshAgent navMeshAgent;
-    [HideInInspector] public Transform chaseTarget;
 
-
-    void Awake()
-    {
-        navMeshAgent = GetComponent<NavMeshAgent>();
-    }
-
-    protected void Update()
+    private void Update()
 	{
 		m_currentState.UpdateState(this);
 	}
