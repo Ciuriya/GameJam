@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class MenuHandler : MonoBehaviour
 {
-	// The currently opened menu. If null, the game is not currently paused.
-	private GameObject m_currentMenu;
+	[Tooltip("The currently opened menu. If null, the game is not currently paused.")]
+	public GameObject m_currentMenu;
 
 	// The previously opened menu.
 	private GameObject m_previousMenu;
