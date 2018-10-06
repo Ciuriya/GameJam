@@ -7,6 +7,8 @@ public class StateController : MonoBehaviour
 {
 	public State m_currentState;
 	public bool m_drawGizmos;
+    public Transform[] wayPointsList;
+    public int nextWayPoint;
 
     [HideInInspector] public float m_stateTimeElapsed;
     [HideInInspector] public NavMeshAgent navMeshAgent;

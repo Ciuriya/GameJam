@@ -7,8 +7,7 @@ using UnityEngine.AI;
 [CreateAssetMenu(menuName = "AI/Actions/Patrol")]
 public class PatrolAction : Action {
 
-    public Transform[] wayPointsList;
-    public int nextWayPoint;
+
 
     public override void Execute(StateController controller)
     {
@@ -18,11 +17,11 @@ public class PatrolAction : Action {
 
     private void Patrol(StateController controller)
     {
-        if (wayPointsList.Length == 0)
+        if (controller.wayPointsList.Length == 0)
         {
             return;
         }
-        controller.navMeshAgent.destination = wayPointsList[nextWayPoint].position;
-        nextWayPoint = (nextWayPoint + 1) % wayPointsList.Length;
+        controller.navMeshAgent.destination = controller.wayPointsList[controller.nextWayPoint].position;
+        controller.nextWayPoint = (controller.nextWayPoint + 1) % controller.wayPointsList.Length;
     }
 }

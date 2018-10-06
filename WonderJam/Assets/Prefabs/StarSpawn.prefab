@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114312353797170024}
   - component: {fileID: 114107109717489692}
   - component: {fileID: 95189243079874502}
+  - component: {fileID: 114005719817000550}
   m_Layer: 0
   m_Name: StarSpawn
   m_TagString: Untagged
@@ -62,6 +63,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114005719817000550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1911874920205946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac5af32151ab1f4b8620f4bdfe1f55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_currentState: {fileID: 11400000, guid: fc21fa3eaa6e3b3439ecd5e513189017, type: 2}
+  m_drawGizmos: 1
+  wayPointsList: []
+  nextWayPoint: 0
+  m_stateTimeElapsed: 0
+  navMeshAgent: {fileID: 0}
+  chaseTarget: {fileID: 0}
 --- !u!114 &114107109717489692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,7 +123,7 @@ MonoBehaviour:
   m_health: 100
   m_maxHealth:
     m_useConstant: 1
-    m_constantValue: 0
+    m_constantValue: 100
     m_variable: {fileID: 0}
   m_deathEvent:
     m_PersistentCalls:
