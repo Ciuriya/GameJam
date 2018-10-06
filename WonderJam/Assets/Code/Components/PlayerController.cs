@@ -73,32 +73,11 @@ public class PlayerController : PhysicsObject
         else
             animator.SetBool("isjumping", false);
 
-        if (Input.GetButtonDown("Fire1") && m_damager)
-        {
-			if(m_damager.Damage())
+		if (Input.GetButtonDown("Fire1") && m_damager)
+		{
+			if (m_damager.Damage())
 				animator.SetBool("isattacking", true);
-
-
-        if (Input.GetButtonDown("Fire2"))
-        {
-
-            animator.SetBool("isattacking", true);
-
-        }
-        else if (Input.GetButtonUp("Fire2"))
-        {
-            animator.SetBool("isattacking", false);
-        }
-            
-
-        
-        
-
+		} else if (Input.GetButtonUp("Fire1") && m_damager)
+			animator.SetBool("isattacking", false);
     }
 }
-
-        }
-        else if (Input.GetButtonUp("Fire1") && m_damager)
-        {
-            animator.SetBool("isattacking", false);
-        }
