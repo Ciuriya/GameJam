@@ -7,9 +7,9 @@ public class UnitHealth : MonoBehaviour
 	public float m_health;
 
 	[Tooltip("Unit's max health")]
-	public float m_maxHealth;
+	public FloatReference m_maxHealth;
 
-	[Tooltip("Event called when the entity dies.")
+	[Tooltip("Event called when the entity dies.")]
 	public UnityEvent m_deathEvent;
 
 	public void Damage(float p_amount)
