@@ -15,8 +15,13 @@ public class ImageFillSetter : MonoBehaviour
 	[Tooltip("Image to set the fill amount on.")]
 	public Image m_image;
 
-	private void Update()
-	{
-		m_image.fillAmount = Mathf.Clamp01(Mathf.InverseLerp(m_minimumFill.Value, m_maximumFill.Value, m_fillAmount.Value));
-	}
+    public void OnEnable()
+    {
+        UpdateFill();
+    }
+
+    public void UpdateFill()
+    {
+        m_image.fillAmount = Mathf.Clamp01(Mathf.InverseLerp(m_minimumFill.Value, m_maximumFill.Value, m_fillAmount.Value));
+    }
 }
