@@ -9,8 +9,13 @@ public class FloatTextReplacer : MonoBehaviour
 	[Tooltip("The variable to update the text to.")]
 	public FloatVariable m_variable;
 
-	private void Update()
-	{
-		m_text.text = m_variable.Value.ToString();
-	}
+    public void OnEnable()
+    {
+        UpdateText();
+    }
+
+    public void UpdateText()
+    {
+        m_text.text = m_variable.Value.ToString();
+    }
 }
