@@ -14,7 +14,7 @@ MonoBehaviour:
   m_actions:
   - {fileID: 11400000, guid: bad8c8c4de8165a488d18d3045db4349, type: 2}
   m_transitions:
-  - m_condition: {fileID: 0}
+  - m_condition: {fileID: 11400000, guid: ae4abb95486d66c4d9e7f80d02c1acc1, type: 2}
     m_trueState: {fileID: 11400000}
     m_falseState: {fileID: 11400000}
   m_sceneGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
