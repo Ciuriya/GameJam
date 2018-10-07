@@ -20,13 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4500384550226946}
   - component: {fileID: 61826672240402152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HurtBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1911874920205946
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 50760487684008846}
   - component: {fileID: 61462591512930130}
   - component: {fileID: 114473829503960188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StarSpawn
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4f9cdc52330ae4b9f59e645006cbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_hurtbox: {fileID: 0}
+  m_hurtbox: {fileID: 1339035619079934}
   m_spriteRenderer: {fileID: 212848621165837924}
   m_offset: {x: 1, y: 0}
   m_damage:
@@ -256,15 +256,15 @@ MonoBehaviour:
   m_canDamage: 1
   m_knockbackValue:
     m_useConstant: 1
-    m_constantValue: 2
+    m_constantValue: 20
     m_variable: {fileID: 0}
   m_damageCooldown:
     m_useConstant: 1
-    m_constantValue: 1
+    m_constantValue: 0.25
     m_variable: {fileID: 0}
   m_hittableLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 256
   m_damageEvent:
     m_PersistentCalls:
       m_Calls: []

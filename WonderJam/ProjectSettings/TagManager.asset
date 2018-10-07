@@ -43,12 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Interactable
-    uniqueID: 376382341
+  - name: bg
+    uniqueID: 954868209
     locked: 0
-  - name: Tooltip
-    uniqueID: 3386852271
-    locked: 0
-  - name: Player
-    uniqueID: 3904777911
+  - name: player
+    uniqueID: 2145802457
     locked: 0
