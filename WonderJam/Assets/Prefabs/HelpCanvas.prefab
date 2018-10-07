@@ -46,7 +46,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1737539014437840
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,14 +101,14 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Comment jouer:\n\n     Le but est de survivre le plus longtemps possible
-    aux demandes d\xE9raisonnable du dieu du temple. Pour ce faire, vous devez collecter
-    les diverses resources pr\xE9sentes sur l'ile.\n    Dans le jeu, vous trouverez
-    4 resources. La nouriture, le bois, la pierre et l'or. Chaque ann\xE9e, le dieu
-    de votre temple vous demandera un tribu. Si vous ne le contenter pas votre village
-    sera d\xE9truit. Il y a 2 facon d'optenir des resources, 1: chaque tour, les batiments
-    de votre villages produicent 1 resource correspondant \xE0 leur niveau de devellopement
-    2. chaque tour, votre h\xE9ros fait une descente dans le donjon pour collecter
-    des resources sur les monstres pr\xE9sents."
+    aux demandes d\xE9raisonnables du dieu du temple. Pour ce faire, vous devez collecter
+    les diverses resources pr\xE9sentes sur l'\xEEle.\n    Dans le jeu, vous trouverez
+    4 ressources. La nourriture, le bois, la pierre et l'or. Chaque ann\xE9e, le dieu
+    de votre temple vous demandera un tribu. Si vous ne le content\xE9 pas, votre
+    village sera d\xE9truit. \nIl y a 2 fa\xE7ons d'obtenir des resources\n1: chaque
+    tour, les batiments de votre village produisent une ressource correspondant \xE0
+    leur niveau de d\xE9veloppement\n2. chaque tour, votre h\xE9ros fait une descente
+    dans le donjon pour collecter des resources sur les monstres pr\xE9sents."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -135,14 +135,14 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 5
+  m_fontSize: 5.25
   m_fontSizeBase: 5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 4
+  m_fontSizeMax: 10
+  m_fontStyle: 1
+  m_textAlignment: 513
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -173,22 +173,22 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -34.468678, y: -8.67988, z: -36.600746, w: -8.036931}
+  m_margin: {x: -20, y: -8.67988, z: -32.165314, w: -8.036931}
   m_textInfo:
     textComponent: {fileID: 114069634650306316}
-    characterCount: 674
+    characterCount: 680
     spriteCount: 0
-    spaceCount: 119
+    spaceCount: 120
     wordCount: 110
     linkCount: 0
-    lineCount: 8
+    lineCount: 11
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -256,12 +256,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.38
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
