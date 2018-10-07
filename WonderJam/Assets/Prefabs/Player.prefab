@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e09d4b856c1c04f8d0103c493cdd8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextScene: menu
+  m_nextScene: Town_normal
 --- !u!114 &114430773509398554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lostHealthPerSecond: 0.05
-  baseFoodLost: 0.5
+  baseFoodLost: 3
   updateEvent: {fileID: 11400000, guid: 9a36421bead9bae43917076088ac4198, type: 2}
   currentFood:
     m_useConstant: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_deathEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: f41b2238433980d46a9d25da658635d5, type: 2}
+      - m_Target: {fileID: 11400000, guid: b807f21f9ddf3104eb5002ca3ddab31e, type: 2}
         m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
