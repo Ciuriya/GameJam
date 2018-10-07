@@ -13,3 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seasonStartRatio: 0.25
   nextSeason: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  seasonModifiers:
+  - ressourceType: {fileID: 11400000, guid: 329f86f4190990541b0334259f6da7ec, type: 2}
+    delta: -1
