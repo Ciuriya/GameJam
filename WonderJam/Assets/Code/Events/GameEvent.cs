@@ -9,6 +9,7 @@ public class GameEvent : ScriptableObject
 
 	public void Raise()
 	{
+        Debug.Log(this.name);
 		// counting down to avoid list removal errors
 		for (int i = m_listeners.Count - 1; i >= 0; i--)
 			m_listeners[i].OnEventRaised();
