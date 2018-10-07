@@ -20,7 +20,7 @@ public class LevelHandler : MonoBehaviour
 			}
 		}
 
-		m_levelsVisited.Add(level);
+		m_levelsVisited.m_items.Add(level);
 
 		SceneManager.LoadScene(level);
 	}

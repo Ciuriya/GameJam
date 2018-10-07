@@ -11,5 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5113b5ce022f4f43bda848bb0cc8d75, type: 3}
   m_Name: VisitedLevels
   m_EditorClassIdentifier: 
-  m_items:
-  - 
+  m_items: []
