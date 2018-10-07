@@ -8,6 +8,5 @@ public class BuildingLevel : EnumItem
     public RessourceTransaction ressourceGenTransaction;
     public List<RessourceTransaction> upgradeCosts;
     public float maxStorageIncrement;
-    public BuildingLevel nextLevel;
-    
+    public BuildingLevel nextLevel;    
 }
