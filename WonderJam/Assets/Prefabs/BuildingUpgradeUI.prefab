@@ -1949,7 +1949,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 27
-  m_Text: "G\xE9n\xE9r\xE9es :"
+  m_Text: 'Production :'
 --- !u!114 &114918601475088478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1982,7 +1982,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 27
-  m_Text: "G\xE9n\xE9r\xE9es :"
+  m_Text: 'Production :'
 --- !u!114 &114963542665936726
 MonoBehaviour:
   m_ObjectHideFlags: 1

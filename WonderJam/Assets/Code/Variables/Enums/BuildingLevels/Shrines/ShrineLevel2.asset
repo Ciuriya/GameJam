@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cbe278d7dc9aa640b8b22d81127f231, type: 3}
-  m_Name: ShrineLevel0
+  m_Name: ShrineLevel2
   m_EditorClassIdentifier: 
   ressourceGenTransaction:
     ressourceType: {fileID: 11400000, guid: 83cd0a4d9fc03f7478d0c243f959944e, type: 2}
@@ -22,4 +22,4 @@ MonoBehaviour:
   - ressourceType: {fileID: 11400000, guid: 3fe30a9ee11c9894894c98b78b504c6f, type: 2}
     delta: 0
   maxStorageIncrement: 0
-  nextLevel: {fileID: 11400000, guid: ff3f34553a794d64f91382d6c79cf5d4, type: 2}
+  nextLevel: {fileID: 0}

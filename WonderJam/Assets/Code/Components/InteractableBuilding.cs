@@ -51,26 +51,23 @@ public class InteractableBuilding : MonoBehaviour
     {
 
         float currentProduction = currentLevel.ressourceGenTransaction.delta;
-        Debug.Log(currentProduction);
-        float productionAfterUpgrade = currentLevel.nextLevel.ressourceGenTransaction.delta;
-        Debug.Log(productionAfterUpgrade);
         float deltaStrorage = currentLevel.maxStorageIncrement;
-        Debug.Log(deltaStrorage);
-        Sprite currentProductionSprite = currentLevel.ressourceGenTransaction.ressourceType.associatedSprite;
+        Sprite currentProductionSprite = currentLevel.ressourceGenTransaction.ressourceType.icon;
 
         float goldCost = currentLevel.upgradeCosts[0].delta;
-        Debug.Log(goldCost);
-        Sprite goldSprite = currentLevel.upgradeCosts[0].ressourceType.associatedSprite;
+        Sprite goldSprite = currentLevel.upgradeCosts[0].ressourceType.icon;
 
         float stoneCost = currentLevel.upgradeCosts[1].delta;
-        Debug.Log(stoneCost);
-        Sprite stoneSprite = currentLevel.upgradeCosts[1].ressourceType.associatedSprite;
+        Sprite stoneSprite = currentLevel.upgradeCosts[1].ressourceType.icon;
 
         float woodCost = currentLevel.upgradeCosts[2].delta;
-        Debug.Log(woodCost);
-        Sprite woodSprite = currentLevel.upgradeCosts[2].ressourceType.associatedSprite;
+        Sprite woodSprite = currentLevel.upgradeCosts[2].ressourceType.icon;
 
-        currentLevel = currentLevel.nextLevel;
+        if (currentLevel.nextLevel != null)
+        {
+            float productionAfterUpgrade = currentLevel.nextLevel.ressourceGenTransaction.delta;
+            currentLevel = currentLevel.nextLevel;
+        }
 
 
     }
