@@ -8,8 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f09b311741aad74eb9c69e1f577d364, type: 3}
-  m_Name: CurrentSeason
+  m_Script: {fileID: 11500000, guid: c5113b5ce022f4f43bda848bb0cc8d75, type: 3}
+  m_Name: VisitedLevels
   m_EditorClassIdentifier: 
-  m_developerDescription: 
-  m_value: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_items: []
