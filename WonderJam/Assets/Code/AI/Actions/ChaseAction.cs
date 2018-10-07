@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class ChaseAction : Action {
 
     public Transform chaseTarget;
-    int MinDist = 5;
+    int MinDist = 1;
     int MaxDist = 10;
     int MoveSpeed = 4;
 
@@ -20,7 +20,7 @@ public class ChaseAction : Action {
 
     private void Chase(StateController controller)
     {
-        controller.transform.LookAt(chaseTarget);
+        controller.transform.LookAt(chaseTarget.position);
 
         if(Vector2.Distance(controller.transform.position, chaseTarget.position) >= MinDist)
         {

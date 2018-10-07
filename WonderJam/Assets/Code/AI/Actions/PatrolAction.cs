@@ -5,14 +5,8 @@ using UnityEngine.UI;
 
 
 [CreateAssetMenu(menuName = "AI/Actions/Patrol")]
+
 public class PatrolAction : Action {
-
-    public Transform[] points;
-    public int nextPoint = 0;
-    int MaxDist = 10;
-    int MinDist = 1;
-    int MoveSpeed = 4;
-
 
     public override void Execute(StateController controller)
     {
@@ -21,19 +15,15 @@ public class PatrolAction : Action {
 
     private void Patrol(StateController controller)
     {
-        controller.transform.LookAt(points[nextPoint].position);
-        if(Vector2.Distance (controller.transform.position, points[nextPoint].position) >= MinDist)
-        {
-            controller.transform.position += controller.transform.forward * MoveSpeed * Time.deltaTime;
-            if (Vector2.Distance(controller.transform.position, points[nextPoint].position) <= MaxDist)
-            {
+        Vector3 direction = controller.points[controller.nextPoint].position - controller.transform.position;
+        controller.transform.position += direction.normalized * controller.MoveSpeed * Time.deltaTime; 
+        Debug.DrawRay(controller.transform.position, controller.points[controller.nextPoint].position - controller.transform.position,Color.green);
 
-            }
-        }
-        else
+        if (Vector2.Distance(controller.transform.position, controller.points[controller.nextPoint].position) <= controller.distMin)
         {
-            nextPoint = (nextPoint + 1) % points.Length;
+            controller.nextPoint = (controller.nextPoint + 1) % controller.points.Length;
         }
+
     }
 
 }

@@ -14,4 +14,4 @@ MonoBehaviour:
   points:
   - {fileID: 4792138880478920, guid: 68cc9e7b76da2fb4486fe683bae0b578, type: 2}
   - {fileID: 4716770221241618, guid: e9c3697439083db479be0ddc260c21aa, type: 2}
-  nextPoint: 0
+  nextPoint: 1
