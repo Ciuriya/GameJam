@@ -11,4 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c670f5b4cf354314eb804cecd2fe2899, type: 3}
   m_Name: Winter
   m_EditorClassIdentifier: 
+  yearProgress: 0.75
   nextSeason: {fileID: 0}
+  seasonModifiers: []

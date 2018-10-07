@@ -413,6 +413,149 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &44095511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1841345471952688, guid: b77cf1affab288d4c9b23102247691fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44095516}
+  - component: {fileID: 44095515}
+  - component: {fileID: 44095514}
+  - component: {fileID: 44095513}
+  - component: {fileID: 44095512}
+  m_Layer: 0
+  m_Name: Quarry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &44095512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44095511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840506fae7b4dca4c9a1ce0a39d019b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_summerSprite: {fileID: 21300008, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_winterSprite: {fileID: 21300010, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_seasonSpring: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_seasonSummer: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
+  m_seasonFall: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_seasonWinter: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
+--- !u!114 &44095513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44095511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 44095512}
+        m_MethodName: ChangeSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &44095514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114945288028805322, guid: b77cf1affab288d4c9b23102247691fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44095511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bcbf844f442de4c9541dc0fbc5b73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: {fileID: 11400000, guid: 99015c86167162442bc64d372dea9ae8, type: 2}
+  currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  buildingUpgratedEvent: {fileID: 11400000, guid: f95820350da50374a8cbfe3ab9112ca5,
+    type: 2}
+--- !u!212 &44095515
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 212686773313348502, guid: b77cf1affab288d4c9b23102247691fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44095511}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300008, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &44095516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44095511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.39, y: 0.67, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &196096264
 Prefab:
   m_ObjectHideFlags: 0
@@ -530,6 +673,8 @@ GameObject:
   - component: {fileID: 353082904}
   - component: {fileID: 353082903}
   - component: {fileID: 353082902}
+  - component: {fileID: 353082906}
+  - component: {fileID: 353082905}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -827,6 +972,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &353082905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353082898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb6cdeff634aa64b834667cbf3a8d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_seasonSpring: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_seasonSummer: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
+  m_seasonFall: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_seasonWinter: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
+--- !u!114 &353082906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353082898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 353082905}
+        m_MethodName: ChangeTilesetColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &438806603
 Prefab:
   m_ObjectHideFlags: 0
@@ -874,6 +1063,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4165291588101628, guid: 08abcdda17171c94696a2e7f0a6e9262,
     type: 2}
   m_PrefabInternal: {fileID: 438806603}
+--- !u!1 &486504312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1747489362883218, guid: de55349a8a43a1f488fb6480b4965edd,
+    type: 2}
+  m_PrefabInternal: {fileID: 4164396}
+--- !u!114 &486504313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486504312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840506fae7b4dca4c9a1ce0a39d019b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_summerSprite: {fileID: 21300000, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_winterSprite: {fileID: 21300004, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_seasonSpring: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_seasonSummer: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
+  m_seasonFall: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_seasonWinter: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
+--- !u!114 &486504314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486504312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 486504313}
+        m_MethodName: ChangeSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &521812414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1563055317710416, guid: ebd2ce98d9403f84c8b49c66c94006af,
@@ -1598,63 +1838,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd2ce98d9403f84c8b49c66c94006af, type: 2}
   m_IsPrefabAsset: 0
---- !u!1001 &1226292396
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4479743441990300, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 212686773313348502, guid: b77cf1affab288d4c9b23102247691fe,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212686773313348502, guid: b77cf1affab288d4c9b23102247691fe,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212686773313348502, guid: b77cf1affab288d4c9b23102247691fe,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b77cf1affab288d4c9b23102247691fe, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!114 &1589484169 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114140952629599684, guid: fdb8789ae9a40c64d8736b91b1309086,
@@ -1797,6 +1980,57 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c598f69dbb389642873de29150c8df8, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1941869983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683988229501422, guid: 04b57b80fba03bb4aa7db58d35eb32ae,
+    type: 2}
+  m_PrefabInternal: {fileID: 244756794}
+--- !u!114 &1941869984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1941869983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840506fae7b4dca4c9a1ce0a39d019b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_summerSprite: {fileID: 21300006, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_winterSprite: {fileID: 21300002, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_seasonSpring: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_seasonSummer: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
+  m_seasonFall: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_seasonWinter: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
+--- !u!114 &1941869985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1941869983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1941869984}
+        m_MethodName: ChangeSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1950189040 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1524838487781950, guid: 7c598f69dbb389642873de29150c8df8,
@@ -1813,14 +2047,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840506fae7b4dca4c9a1ce0a39d019b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_summerSprite: {fileID: 0}
-  m_winterSprite: {fileID: 0}
-  seasonChangeEvent: {fileID: 0}
-  m_currentSeason: {fileID: 0}
-  m_seasonSpring: {fileID: 0}
-  m_seasonSummer: {fileID: 0}
-  m_seasonFall: {fileID: 0}
-  m_seasonWinter: {fileID: 0}
+  m_summerSprite: {fileID: 21300000, guid: c9d66b95ab40fc94ab0453bd63f27584, type: 3}
+  m_winterSprite: {fileID: 21300000, guid: c9d66b95ab40fc94ab0453bd63f27584, type: 3}
+  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_seasonSpring: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_seasonSummer: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
+  m_seasonFall: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_seasonWinter: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
 --- !u!114 &1950189042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,11 +2070,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1950189041}
-        m_MethodName: 
+        m_MethodName: ChangeSprite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

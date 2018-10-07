@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Spring
   m_EditorClassIdentifier: 
   yearProgress: 0
-  nextSeason: {fileID: 0}
+  nextSeason: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
   seasonModifiers: []

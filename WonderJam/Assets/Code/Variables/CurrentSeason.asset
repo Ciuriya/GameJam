@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: CurrentSeason
   m_EditorClassIdentifier: 
   m_developerDescription: 
-  m_value: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_value: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
