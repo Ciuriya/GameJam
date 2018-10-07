@@ -86,13 +86,29 @@ public class Damager : MonoBehaviour
 			Collider2D hit = m_attackOverlapResults[i];
 
 			if(hit.gameObject != gameObject)
-				HitCollider(hit, hit.GetComponent<Rigidbody2D>(), false);
+			{
+				StateController controller = GetComponent<StateController>();
+				CharacterController2D cc2d = GetComponent<CharacterController2D>();
+				bool knockbackLeft = false;
+
+				if (controller)
+				{
+					knockbackLeft = !controller.GoingRight();
+				}
+
+				if (cc2d)
+				{
+					knockbackLeft = cc2d.m_facingright ? false : true;
+				}
+
+				HitCollider(hit, hit.GetComponent<Rigidbody2D>(), knockbackLeft);
+			}
 		}
 
 		return true;
 	}
 
-	public void HitCollider(Collider2D p_hit, Rigidbody2D p_rigid, bool p_reverseKnockback)
+	public void HitCollider(Collider2D p_hit, Rigidbody2D p_rigid, bool p_knockbackLeft)
 	{
 		UnitHealth health = p_hit.GetComponent<UnitHealth>();
 
@@ -104,13 +120,12 @@ public class Damager : MonoBehaviour
 			if (p_rigid)
 			{
 				float force = m_knockbackValue.Value * 2;
-				Vector2 velocity = new Vector2(force * (m_spriteRenderer.flipX ? -1 : 1), force);
+				Vector2 velocity = new Vector2(force * 2, force / 3);
+				int flip = p_knockbackLeft ? -1 : 1;
 
-				velocity.x *= (p_reverseKnockback ? -1 : 1);
+				velocity.x *= flip;
 
-				if(p_hit.CompareTag("Player"))
-					p_hit.GetComponent<PlayerController>().Knockback(new Vector2(velocity.x, velocity.y));
-				else p_rigid.velocity = velocity;
+				p_rigid.velocity = velocity;
 			}
 		}
 	}

@@ -28,6 +28,12 @@ public class StateController : MonoBehaviour
 		}
 	}
 
+	public bool GoingRight()
+	{
+		Debug.Log((points[nextPoint].position - transform.position).x);
+		return (points[nextPoint].position - transform.position).x >= 0;
+	}
+
 	public bool CheckCountdown(float p_duration)
 	{
 		m_stateTimeElapsed += Time.deltaTime;
