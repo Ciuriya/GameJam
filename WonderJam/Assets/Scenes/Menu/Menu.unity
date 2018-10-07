@@ -305,7 +305,31 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114557080844238938, guid: dc019d91960d25b48bff44bdff184a3d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338294543660924, guid: dc019d91960d25b48bff44bdff184a3d,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 64088ba657aad6e4496da164b902404f,
+        type: 3}
+    - target: {fileID: 114658128925248928, guid: dc019d91960d25b48bff44bdff184a3d,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 64088ba657aad6e4496da164b902404f,
+        type: 3}
+    - target: {fileID: 114700096515390786, guid: dc019d91960d25b48bff44bdff184a3d,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 64088ba657aad6e4496da164b902404f,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 114557080844238938, guid: dc019d91960d25b48bff44bdff184a3d, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: dc019d91960d25b48bff44bdff184a3d, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &404137009
