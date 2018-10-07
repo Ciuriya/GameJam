@@ -62,6 +62,11 @@ public class MenuHandler : MonoBehaviour
 		Time.timeScale = 1f;
 	}
 
+	public void Quit()
+	{
+		Application.Quit();
+	}
+
 	public void OnVolumeChanged(float p_value)
 	{
 		AudioListener.volume = p_value;
