@@ -22,18 +22,3 @@ MonoBehaviour:
     m_dropChance: 50
     m_minimumDropAmount: 3
     m_maximumDropAmount: 7
-  - m_resource: {fileID: 11400000, guid: fa402cd8d1171204daac1ae80ad44121, type: 2}
-    m_resourceEvent: {fileID: 11400000, guid: 49629f19cceae9c4f89ba77b7248a30d, type: 2}
-    m_dropChance: 100
-    m_minimumDropAmount: 5
-    m_maximumDropAmount: 10
-  - m_resource: {fileID: 0}
-    m_resourceEvent: {fileID: 0}
-    m_dropChance: 0
-    m_minimumDropAmount: 0
-    m_maximumDropAmount: 0
-  - m_resource: {fileID: 0}
-    m_resourceEvent: {fileID: 0}
-    m_dropChance: 0
-    m_minimumDropAmount: 0
-    m_maximumDropAmount: 0
