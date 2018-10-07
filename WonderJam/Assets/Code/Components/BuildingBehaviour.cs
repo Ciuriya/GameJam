@@ -63,18 +63,4 @@ public class BuildingBehaviour : MonoBehaviour {
 
         type.ressourceChangedEvent.Raise();
     }
-
-
-    private void Update()
-    {
-        if (Input.GetKeyDown("down"))
-        {
-            GenerateRessources();
-        }
-
-        if (Input.GetKeyDown("up"))
-        {
-            LevelUp();
-        }
-    }
 }

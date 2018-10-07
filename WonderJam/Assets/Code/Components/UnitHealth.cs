@@ -22,6 +22,8 @@ public class UnitHealth : MonoBehaviour
     [Tooltip("Event called when the entity dies.")]
     public UnityEvent m_deathEvent;
 
+	public GameEvent m_gameDamagedEvent;
+
     public bool IsImmune()
     {
         return Time.time * 1000 < m_lastHit + m_immunityWindow * 1000;
@@ -55,6 +57,8 @@ public class UnitHealth : MonoBehaviour
     public void Starvation(float amount) 
     {
         SetHealth(GetHealth() - amount);
+		m_gameDamagedEvent.Raise();
+
         if(GetHealth() <= 0f)
         {
             m_deathEvent.Invoke();

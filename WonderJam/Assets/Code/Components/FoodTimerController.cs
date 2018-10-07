@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class FoodTimerController : MonoBehaviour
 {
-    private const float HEALTH_LOST = 0.05f;
-    private const float BASE_FOOD_LOST = 5; //qty of food lost every second;
+    public float lostHealthPerSecond = 0.05f;
+    public float baseFoodLost = 0.5f; //qty of food lost every second;
+	public GameEvent updateEvent;
     private const float STARVATION_THICK_DELAY = 1;
     private float lastHit;
 
     public FloatReference currentFood;
     public FloatReference maxHealth;
     UnitHealth unitHealth;
+	private float stackedFood;
     //GameObject damager;   
 
     // Use this for initialization
@@ -25,21 +27,29 @@ public class FoodTimerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentFood.Value == 0f)
+		if (stackedFood >= 5f)
+		{
+			stackedFood = 0f;
+			currentFood.m_variable.Value -= 5f;
+			updateEvent.Raise();
+
+			if (currentFood.Value < 0)
+			{
+				currentFood.m_variable.Value = 0;
+			}
+		}
+
+        if (currentFood.Value > 0f)
         {
-            currentFood.m_variable.Value = currentFood.Value - (BASE_FOOD_LOST * Time.deltaTime);
-            if (currentFood.Value < 0)
-            {
-                currentFood.m_variable.Value = 0;
-            }
+            stackedFood += (baseFoodLost * Time.deltaTime);
         }
         else
         {
-            if (lastHit - STARVATION_THICK_DELAY <= 0) ;
-            {
-                lastHit = Time.time;
-                unitHealth.Starvation(maxHealth.Value * HEALTH_LOST);
-            }
+			if (lastHit - STARVATION_THICK_DELAY <= 0)
+			{
+				lastHit = Time.time;
+				unitHealth.Starvation(maxHealth.Value * lostHealthPerSecond);
+			}
         }
     }
 }
