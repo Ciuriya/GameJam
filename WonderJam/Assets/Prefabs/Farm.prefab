@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4766700490449472}
   - component: {fileID: 212273781284442408}
   - component: {fileID: 114489429821304308}
+  - component: {fileID: 114609227113655602}
+  - component: {fileID: 114857901694400190}
   m_Layer: 0
   m_Name: Farm
   m_TagString: Untagged
@@ -56,6 +58,52 @@ MonoBehaviour:
   currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
   buildingUpgratedEvent: {fileID: 11400000, guid: f95820350da50374a8cbfe3ab9112ca5,
     type: 2}
+--- !u!114 &114609227113655602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683988229501422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840506fae7b4dca4c9a1ce0a39d019b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_summerSprite: {fileID: 21300006, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_winterSprite: {fileID: 21300002, guid: 350f0ff3018ae3c49a1298d947410dac, type: 3}
+  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_seasonSpring: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_seasonSummer: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
+  m_seasonFall: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_seasonWinter: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
+--- !u!114 &114857901694400190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683988229501422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114609227113655602}
+        m_MethodName: ChangeSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212273781284442408
 SpriteRenderer:
   m_ObjectHideFlags: 1
