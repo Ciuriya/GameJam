@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5feb1747ab1317e4ab417a4044dab68a, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: adfc5608b2ec241498492c383279e8cf, type: 3}
   ressourceChangedEvent: {fileID: 11400000, guid: 49629f19cceae9c4f89ba77b7248a30d,
     type: 2}
   valueReference: {fileID: 11400000, guid: fa402cd8d1171204daac1ae80ad44121, type: 2}
   maxValueReference: {fileID: 11400000, guid: 378da878d29192e468294d487e9b16df, type: 2}
-  associatedSprite: {fileID: 21300000, guid: adfc5608b2ec241498492c383279e8cf, type: 3}
