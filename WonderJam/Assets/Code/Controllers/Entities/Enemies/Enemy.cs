@@ -32,4 +32,12 @@ public class Enemy : MonoBehaviour
 	{
 		Destroy(gameObject);
 	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.CompareTag("Enemy")&& collision.otherCollider.CompareTag("Enemy"))
+        {
+            Physics2D.IgnoreCollision(collision.collider, collision.otherCollider);
+        }
+    }
 }

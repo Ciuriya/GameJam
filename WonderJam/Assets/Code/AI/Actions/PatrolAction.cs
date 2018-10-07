@@ -1,28 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+using UnityEngine.UI;
 
 
 [CreateAssetMenu(menuName = "AI/Actions/Patrol")]
-public class PatrolAction : Action {
 
-    public Transform[] wayPointsList;
-    public int nextWayPoint;
+public class PatrolAction : Action {
 
     public override void Execute(StateController controller)
     {
-        controller.navMeshAgent.autoBraking = false;
         Patrol(controller);
     }
 
     private void Patrol(StateController controller)
     {
-        if (wayPointsList.Length == 0)
+        Vector3 direction = controller.points[controller.nextPoint].position - controller.transform.position;
+        controller.transform.position += direction.normalized * controller.MoveSpeed * Time.deltaTime; 
+        Debug.DrawRay(controller.transform.position, controller.points[controller.nextPoint].position - controller.transform.position,Color.green);
+
+        if (Vector2.Distance(controller.transform.position, controller.points[controller.nextPoint].position) <= controller.distMin)
         {
-            return;
+            controller.nextPoint = (controller.nextPoint + 1) % controller.points.Length;
         }
-        controller.navMeshAgent.destination = wayPointsList[nextWayPoint].position;
-        nextWayPoint = (nextWayPoint + 1) % wayPointsList.Length;
+
     }
+
 }

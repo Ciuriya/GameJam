@@ -113,6 +113,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &84527627
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655444860}
+    m_Modifications:
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0406338b8fb8b874ba530848cc236eca, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &84527628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4667009033366484, guid: 0406338b8fb8b874ba530848cc236eca,
+    type: 2}
+  m_PrefabInternal: {fileID: 84527627}
 --- !u!1001 &137518522
 Prefab:
   m_ObjectHideFlags: 0
@@ -219,9 +266,66 @@ Prefab:
       propertyPath: m_Name
       value: StarSpawn (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 84527628}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 304453221}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &304453220
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1655444860}
+    m_Modifications:
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 442b0e1db8736304ca366aa807ad2cf9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &304453221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4838229379997474, guid: 442b0e1db8736304ca366aa807ad2cf9,
+    type: 2}
+  m_PrefabInternal: {fileID: 304453220}
 --- !u!1001 &318244113
 Prefab:
   m_ObjectHideFlags: 0
@@ -261,6 +365,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 84527628}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 304453221}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
@@ -307,6 +421,16 @@ Prefab:
       propertyPath: m_Name
       value: StarSpawn (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 304453221}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 84527628}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
@@ -400,6 +524,16 @@ Prefab:
       propertyPath: m_Name
       value: StarSpawn (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 304453221}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 84527628}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
@@ -3556,13 +3690,13 @@ CompositeCollider2D:
         Y: 0
       - X: 80000000
         Y: 0
-    - - X: 300000000
+    - - X: 160000000
         Y: 0
-      - X: 290000000
+      - X: 150000000
         Y: 0
-      - X: 290000000
+      - X: 150000000
         Y: -10000000
-      - X: 300000000
+      - X: 160000000
         Y: -10000000
     - - X: 210000000
         Y: 0
@@ -3572,13 +3706,13 @@ CompositeCollider2D:
         Y: -10000000
       - X: 210000000
         Y: -10000000
-    - - X: 160000000
+    - - X: 300000000
         Y: 0
-      - X: 150000000
+      - X: 290000000
         Y: 0
-      - X: 150000000
+      - X: 290000000
         Y: -10000000
-      - X: 160000000
+      - X: 300000000
         Y: -10000000
     - - X: 370000000
         Y: -10000000
@@ -3648,18 +3782,18 @@ CompositeCollider2D:
       - {x: 7, y: 1}
       - {x: 7, y: 0}
       - {x: 8, y: 0}
-    - - {x: 30, y: 0}
-      - {x: 29, y: 0}
-      - {x: 29, y: -1}
-      - {x: 30, y: -1}
-    - - {x: 21, y: 0}
-      - {x: 20, y: 0}
-      - {x: 20, y: -1}
-      - {x: 21, y: -1}
     - - {x: 16, y: 0}
       - {x: 15, y: 0}
       - {x: 15, y: -1}
       - {x: 16, y: -1}
+    - - {x: 21, y: 0}
+      - {x: 20, y: 0}
+      - {x: 20, y: -1}
+      - {x: 21, y: -1}
+    - - {x: 30, y: 0}
+      - {x: 29, y: 0}
+      - {x: 29, y: -1}
+      - {x: 30, y: -1}
     - - {x: 37, y: -1}
       - {x: 34, y: -1}
       - {x: 34, y: -2}
@@ -3744,6 +3878,16 @@ Prefab:
       propertyPath: m_Name
       value: StarSpawn (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 304453221}
+    - target: {fileID: 114005719817000550, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 84527628}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
@@ -3785,6 +3929,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 956794117}
+  - {fileID: 84527628}
+  - {fileID: 304453221}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
