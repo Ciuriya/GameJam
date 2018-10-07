@@ -63,21 +63,32 @@ public class UnitHealth : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D p_collider)
 	{
-		if(tag == p_collider.collider.tag || p_collider.collider.CompareTag("Player")) return;
+        if (p_collider.collider.CompareTag("Enemy")&& p_collider.otherCollider.CompareTag("Enemy"))
+        {
+            Physics2D.IgnoreCollision(p_collider.collider, p_collider.otherCollider);
+            return;
+        }
 
-		Damager damager = p_collider.collider.GetComponent<Damager>();
+        if (p_collider.otherCollider.CompareTag("Player") || p_collider.collider.gameObject.layer != LayerMask.NameToLayer("Player")) return;
+		if(p_collider.collider.CompareTag("Player") && p_collider.collider.GetComponent<UnitHealth>().IsImmune()) return;
+
+       
+
+		Damager damager = p_collider.otherCollider.GetComponent<Damager>();
 
 		if(damager)
 		{
-			bool reverseKnockback = true;
-			SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+			bool knockbackLeft = true;
+			CharacterController2D cc2d = p_collider.collider.GetComponent<CharacterController2D>();
 
-			if(renderer)
+			if (cc2d)
 			{
-				reverseKnockback = !renderer.flipX;
+				knockbackLeft = cc2d.m_facingright ? true : false;
 			}
 
-			damager.HitCollider(p_collider.otherCollider, p_collider.otherCollider.GetComponent<Rigidbody2D>(), reverseKnockback);
+			p_collider.collider.GetComponent<UnitHealth>().m_lastHit = Time.time * 1000;
+
+			damager.HitCollider(p_collider.collider, p_collider.collider.GetComponent<Rigidbody2D>(), knockbackLeft);
 		}
 	}
 }

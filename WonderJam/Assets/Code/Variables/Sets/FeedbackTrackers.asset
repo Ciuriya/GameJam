@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b2b238ba91831459d7f8b1fc3c9e6e, type: 3}
+  m_Name: FeedbackTrackers
+  m_EditorClassIdentifier: 
+  m_items:
+  - m_globalValue: {fileID: 11400000, guid: 66477e3b7f81cc64886264403c63a032, type: 2}
+    m_spriteValue: {fileID: 21300000, guid: ba3f80e41f7b8194e93b60a6b3e7576b, type: 3}
+  - m_globalValue: {fileID: 11400000, guid: fbee40ff204fa304fb5bfa71323151b3, type: 2}
+    m_spriteValue: {fileID: 21300000, guid: 03448cc29bf560f41b8b5021cff87e2b, type: 3}
+  - m_globalValue: {fileID: 11400000, guid: fa402cd8d1171204daac1ae80ad44121, type: 2}
+    m_spriteValue: {fileID: 21300000, guid: adfc5608b2ec241498492c383279e8cf, type: 3}
+  - m_globalValue: {fileID: 11400000, guid: e062ab0e091a8424eafcd46fc523e6fe, type: 2}
+    m_spriteValue: {fileID: 21300000, guid: 9d033cb99b3cb824185402cee1261a8d, type: 3}
+  - m_globalValue: {fileID: 11400000, guid: af57c06bf7177024eaa1fcd31499cd75, type: 2}
+    m_spriteValue: {fileID: 21300000, guid: fe1e0d4659a18b240a0d84d0fcb0ca4f, type: 3}
