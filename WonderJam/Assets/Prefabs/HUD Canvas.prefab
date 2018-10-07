@@ -261,6 +261,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1485623804845530
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4244500319210364}
+  - component: {fileID: 114257998243541182}
+  - component: {fileID: 114014193964649228}
+  m_Layer: 0
+  m_Name: SeasonHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1570832092019158
 GameObject:
   m_ObjectHideFlags: 1
@@ -348,6 +365,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4244500319210364
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485623804845530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -322.5, y: -323, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224289738215920012}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114014193964649228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485623804845530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: b56d3be9610fb1e44b9a414010b9be70, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114257998243541182}
+        m_MethodName: Step
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114016406217134740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -367,7 +425,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 8513c43560eba0c4dbf99953f7830fd3, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -495,6 +553,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_text: {fileID: 114493514268402660}
   m_variable: {fileID: 11400000, guid: e062ab0e091a8424eafcd46fc523e6fe, type: 2}
+--- !u!114 &114257998243541182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485623804845530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a397dd8fa652d334b94d88f31942d8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSeasonVar: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  currentYearRatio: {fileID: 11400000, guid: 17af74252851d5241bf2a4c35ac7f66a, type: 2}
+  startingSeason: {fileID: 0}
+  changedSeasonEvent: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
+  stepPerSeason: 3
+  ratioPerSeason: 0.25
 --- !u!114 &114258608861110668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1064,7 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4522c973ca44c4f4b948cddb289dbbc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_currentYearRatio: {fileID: 11400000, guid: 17af74252851d5241bf2a4c35ac7f66a, type: 2}
   m_minimumClockFill:
     m_useConstant: 1
     m_constantValue: 0
@@ -1160,14 +1235,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 8513c43560eba0c4dbf99953f7830fd3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1444,6 +1519,7 @@ RectTransform:
   - {fileID: 224006814185412338}
   - {fileID: 224014985821784788}
   - {fileID: 224667482074082346}
+  - {fileID: 224289738215920012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1572,6 +1648,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4244500319210364}
   - {fileID: 224403602045778706}
   m_Father: {fileID: 224106236976517582}
   m_RootOrder: 3
@@ -1592,7 +1669,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224289738215920012}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

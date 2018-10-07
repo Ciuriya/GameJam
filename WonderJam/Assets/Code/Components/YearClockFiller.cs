@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class YearClockFiller : MonoBehaviour
 {
-    [Tooltip("Current season  on the clock.")]
-    public SeasonVariable m_currentSeason;
+    [Tooltip("Current year ratio on the clock.")]
+    public FloatVariable m_currentYearRatio;
 
     [Tooltip("Minimum fill amount the clock can have.")]
     public FloatReference m_minimumClockFill;
@@ -22,6 +22,6 @@ public class YearClockFiller : MonoBehaviour
 
     public void UpdateClock()
     {
-        m_image.fillAmount = Mathf.Clamp01(Mathf.InverseLerp(m_minimumClockFill.Value, m_maximumClockFill.Value, m_currentSeason.Value.yearProgress));
+       m_image.fillAmount = m_currentYearRatio.Value;
     }
 }
