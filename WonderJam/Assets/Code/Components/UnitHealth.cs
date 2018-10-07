@@ -51,8 +51,16 @@ public class UnitHealth : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D p_collider)
 	{
-		if(tag == p_collider.collider.tag || p_collider.otherCollider.CompareTag("Player") || p_collider.collider.gameObject.layer != LayerMask.NameToLayer("Player")) return;
+        if (p_collider.collider.CompareTag("Enemy")&& p_collider.otherCollider.CompareTag("Enemy"))
+        {
+            Physics2D.IgnoreCollision(p_collider.collider, p_collider.otherCollider);
+            return;
+        }
+
+        if (p_collider.otherCollider.CompareTag("Player") || p_collider.collider.gameObject.layer != LayerMask.NameToLayer("Player")) return;
 		if(p_collider.collider.CompareTag("Player") && p_collider.collider.GetComponent<UnitHealth>().IsImmune()) return;
+
+       
 
 		Damager damager = p_collider.otherCollider.GetComponent<Damager>();
 
