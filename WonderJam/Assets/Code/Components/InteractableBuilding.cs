@@ -49,6 +49,7 @@ public class InteractableBuilding : MonoBehaviour
 
     public void Interact()
     {
+
         float currentProduction = currentLevel.ressourceGenTransaction.delta;
         Debug.Log(currentProduction);
         float productionAfterUpgrade = currentLevel.nextLevel.ressourceGenTransaction.delta;
