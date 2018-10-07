@@ -102,10 +102,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_health: 100
+  m_refHealth: {fileID: 0}
   m_maxHealth:
     m_useConstant: 1
     m_constantValue: 0
     m_variable: {fileID: 0}
+  m_immunityWindow: 0
+  m_damageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   m_deathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -170,7 +177,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f154c58413cb1b74d88e96bbe2c1304f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1eed6af15b86dd04e870a765c4352fc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
