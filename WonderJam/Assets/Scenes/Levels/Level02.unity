@@ -224,6 +224,16 @@ Prefab:
       value: 
       objectReference: {fileID: 4383970549385784, guid: 09c6df5af4781884eb4708afffe224b6,
         type: 2}
+    - target: {fileID: 114473829503960188, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: m_canDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114473829503960188, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: m_knockbackValue.m_constantValue
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
@@ -569,7 +579,7 @@ Prefab:
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
@@ -609,7 +619,7 @@ Prefab:
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
@@ -20246,6 +20256,11 @@ Prefab:
       value: 
       objectReference: {fileID: 4334033772723926, guid: 9cd464ae2e8e0044fac9c0e20898bb4a,
         type: 2}
+    - target: {fileID: 114473829503960188, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: m_knockbackValue.m_constantValue
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
@@ -20603,7 +20618,7 @@ Transform:
   - {fileID: 1446753128}
   - {fileID: 823934201}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1669136106
 Prefab:
@@ -20835,6 +20850,11 @@ Prefab:
       value: 
       objectReference: {fileID: 4865914548660346, guid: a0dea0e4816d1ce4fa2a0ae3aa663add,
         type: 2}
+    - target: {fileID: 114473829503960188, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: m_knockbackValue.m_constantValue
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0

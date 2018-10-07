@@ -256,7 +256,7 @@ MonoBehaviour:
   m_canDamage: 1
   m_knockbackValue:
     m_useConstant: 1
-    m_constantValue: 20
+    m_constantValue: 2
     m_variable: {fileID: 0}
   m_damageCooldown:
     m_useConstant: 1

@@ -8,7 +8,7 @@ public class GoBackToVillage : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("Base Level");
+        SceneManager.LoadScene("Town_normal");
     }
 
     public void RestartLevel()
