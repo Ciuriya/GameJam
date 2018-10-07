@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Name: ShrineLevel0
   m_EditorClassIdentifier: 
   ressourceGenTransaction:
-    ressourceType: {fileID: 0}
+    ressourceType: {fileID: 11400000, guid: 83cd0a4d9fc03f7478d0c243f959944e, type: 2}
     delta: 0
   upgradeCosts:
-  - ressourceType: {fileID: 11400000, guid: 3fe30a9ee11c9894894c98b78b504c6f, type: 2}
+  - ressourceType: {fileID: 11400000, guid: 8a381732e0e73e74388248c7d5a3bca4, type: 2}
     delta: 0
   - ressourceType: {fileID: 11400000, guid: 329f86f4190990541b0334259f6da7ec, type: 2}
     delta: 0
+  - ressourceType: {fileID: 11400000, guid: 3fe30a9ee11c9894894c98b78b504c6f, type: 2}
+    delta: 0
   maxStorageIncrement: 0
-  nextLevel: {fileID: 0}
+  nextLevel: {fileID: 11400000, guid: ff3f34553a794d64f91382d6c79cf5d4, type: 2}

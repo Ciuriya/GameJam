@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: aec8309e1d8f08341b78e055d8537f30
+=======
+guid: b7603d90a22ad314fb595948b78d18e1
+>>>>>>> ft-testCombat
+=======
+guid: 8f27e8135b015914995e046ce416c558
+>>>>>>> develop
+=======
 guid: 88c24056a91a1b345b2f0816e9127574
+>>>>>>> develop
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

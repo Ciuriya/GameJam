@@ -15,3 +15,4 @@ MonoBehaviour:
     type: 2}
   valueReference: {fileID: 11400000, guid: fa402cd8d1171204daac1ae80ad44121, type: 2}
   maxValueReference: {fileID: 11400000, guid: 378da878d29192e468294d487e9b16df, type: 2}
+  associatedSprite: {fileID: 21300000, guid: adfc5608b2ec241498492c383279e8cf, type: 3}

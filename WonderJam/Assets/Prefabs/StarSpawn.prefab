@@ -196,11 +196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4d2a6f4210d4f9124f10ae5422c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 100
+  m_health: 80
   m_refHealth: {fileID: 0}
   m_maxHealth:
     m_useConstant: 1
-    m_constantValue: 100
+    m_constantValue: 80
     m_variable: {fileID: 0}
   m_immunityWindow: 0
   m_damageEvent:
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_canDamage: 1
   m_knockbackValue:
     m_useConstant: 1
-    m_constantValue: 20
+    m_constantValue: 2
     m_variable: {fileID: 0}
   m_damageCooldown:
     m_useConstant: 1
@@ -318,7 +318,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f154c58413cb1b74d88e96bbe2c1304f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 904e0238f4e1c9842a0ba0a30b633498, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0

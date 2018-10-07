@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45ee3d4a7fb8064cad16c137b2895b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_jumpforce: 120
+  m_jumpforce: 150
   m_mouvementsmoothing: 0.05
   m_aircontrol: 1
   m_whatisground:
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_offset: {x: 0.85, y: 0}
   m_damage:
     m_useConstant: 1
-    m_constantValue: 10
+    m_constantValue: 20
     m_variable: {fileID: 0}
   m_canDamage: 1
   m_knockbackValue:
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3c4d2a6f4210d4f9124f10ae5422c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 0
+  m_health: 80
   m_refHealth: {fileID: 11400000, guid: 66477e3b7f81cc64886264403c63a032, type: 2}
   m_maxHealth:
     m_useConstant: 0
