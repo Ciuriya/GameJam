@@ -2137,6 +2137,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114257998243541182, guid: 413084c226091d74ab190023f442567f,
+        type: 2}
+      propertyPath: stepPerSeason
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 224278563944937854, guid: 413084c226091d74ab190023f442567f,
         type: 2}
       propertyPath: m_AnchorMin.y

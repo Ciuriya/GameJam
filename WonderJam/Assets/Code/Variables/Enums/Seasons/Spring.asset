@@ -11,4 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c670f5b4cf354314eb804cecd2fe2899, type: 3}
   m_Name: Spring
   m_EditorClassIdentifier: 
-  nextSeason: {fileID: 0}
+  seasonStartRatio: 0
+  nextSeason: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
