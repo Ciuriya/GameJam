@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class RuntimeSet<T> : ScriptableObject
+public abstract class RuntimeSet<T> : AbsRuntimeSet
 {
-	private List<T> m_items = new List<T>();
+	public List<T> m_items = new List<T>();
+
+	public void ResetList()
+	{
+		m_items = new List<T>();
+	}
 
 	public void Add(T p_item)
 	{
