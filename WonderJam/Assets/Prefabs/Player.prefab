@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e09d4b856c1c04f8d0103c493cdd8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextScene: Town_normal
+  m_nextScene: Menu
 --- !u!114 &114430773509398554
 MonoBehaviour:
   m_ObjectHideFlags: 1

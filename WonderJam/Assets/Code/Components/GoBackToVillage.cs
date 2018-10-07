@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GoBackToVillage : MonoBehaviour
 {
-
+	public GameEvent m_seasonStep;
     public Scene m_villageScene;
 
     public void LoadScene()
@@ -20,6 +20,7 @@ public class GoBackToVillage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+			m_seasonStep.Raise();
             LoadScene();
         }
     }

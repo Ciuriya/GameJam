@@ -21,7 +21,6 @@ public class SeasonHandler : MonoBehaviour
 
         ratioPerStep = ratioPerSeason / stepPerSeason;
         currentYearRatio.Value = ratioPerStep;
-        currentStep = 0;
 
         UpdateYearRatio();
         changedSeasonEvent.Raise();

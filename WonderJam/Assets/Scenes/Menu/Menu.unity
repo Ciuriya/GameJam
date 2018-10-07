@@ -4236,6 +4236,49 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 404137009}
   m_Script: {fileID: 11500000, guid: 34e7a28876c7b0c48a4abce5eed698b4, type: 3}
+--- !u!1 &880413602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880413604}
+  - component: {fileID: 880413603}
+  m_Layer: 0
+  m_Name: MenuResetHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &880413603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880413602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee40072b2f9c344f8604f597f1fce47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_seasonStep: {fileID: 0}
+  m_floatsToReset: {fileID: 11400000, guid: 22d29e1f21473db4dbe3da5f0ab24d4d, type: 2}
+  m_setsToReset: []
+--- !u!4 &880413604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880413602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.265624, y: -1.4660093, z: 0.13830206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1101425787
 GameObject:
   m_ObjectHideFlags: 0

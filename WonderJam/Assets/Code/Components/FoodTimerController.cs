@@ -45,7 +45,7 @@ public class FoodTimerController : MonoBehaviour
         }
         else
         {
-			if (lastHit - STARVATION_THICK_DELAY <= 0)
+			if (lastHit + STARVATION_THICK_DELAY <= Time.time)
 			{
 				lastHit = Time.time;
 				unitHealth.Starvation(maxHealth.Value * lostHealthPerSecond);

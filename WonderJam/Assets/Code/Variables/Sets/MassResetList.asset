@@ -15,10 +15,10 @@ MonoBehaviour:
   - m_variable: {fileID: 11400000, guid: 66477e3b7f81cc64886264403c63a032, type: 2}
     m_resetTo:
       m_useConstant: 0
-      m_constantValue: 0
+      m_constantValue: 100
       m_variable: {fileID: 11400000, guid: dfd05abe95e80244f80da8aa4e9bbbe4, type: 2}
   - m_variable: {fileID: 11400000, guid: fbee40ff204fa304fb5bfa71323151b3, type: 2}
     m_resetTo:
       m_useConstant: 0
-      m_constantValue: 0
+      m_constantValue: 100
       m_variable: {fileID: 11400000, guid: a838f3bbd98f96c45bb953d78d9d87d3, type: 2}

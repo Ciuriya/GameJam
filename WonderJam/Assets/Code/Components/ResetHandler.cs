@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class ResetHandler : MonoBehaviour
 {
+	public GameEvent m_seasonStep;
 	public ResetRuntimeSet m_floatsToReset;
 	public List<AbsRuntimeSet> m_setsToReset;
 
-	void Awake()
+	void Start()
 	{
 		for(int i = 0; i < m_floatsToReset.Length(); ++i)
 		{
@@ -25,5 +26,7 @@ public class ResetHandler : MonoBehaviour
 
 			methodInfo.Invoke(ars, null);
 		}
+
+		if(m_seasonStep) m_seasonStep.Raise();
 	}
 }

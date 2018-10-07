@@ -579,7 +579,7 @@ Prefab:
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
@@ -619,7 +619,7 @@ Prefab:
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 224106236976517582, guid: 413084c226091d74ab190023f442567f,
         type: 2}
@@ -671,6 +671,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1485623804845530, guid: 413084c226091d74ab190023f442567f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 413084c226091d74ab190023f442567f, type: 2}
   m_IsPrefabAsset: 0
@@ -714,6 +718,11 @@ Prefab:
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114956061678165338, guid: fdb8789ae9a40c64d8736b91b1309086,
+        type: 2}
+      propertyPath: m_response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 637692836}
+    - target: {fileID: 114131042464964120, guid: fdb8789ae9a40c64d8736b91b1309086,
         type: 2}
       propertyPath: m_response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
@@ -20618,7 +20627,7 @@ Transform:
   - {fileID: 1446753128}
   - {fileID: 823934201}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1669136106
 Prefab:

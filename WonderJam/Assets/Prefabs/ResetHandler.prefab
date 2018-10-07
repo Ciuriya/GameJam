@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee40072b2f9c344f8604f597f1fce47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_seasonStep: {fileID: 11400000, guid: b56d3be9610fb1e44b9a414010b9be70, type: 2}
   m_floatsToReset: {fileID: 11400000, guid: ce3b2d86f76834f4f82c730d81f5a629, type: 2}
   m_setsToReset:
   - {fileID: 11400000, guid: 440367cb35759eb458a7eb670f679041, type: 2}
