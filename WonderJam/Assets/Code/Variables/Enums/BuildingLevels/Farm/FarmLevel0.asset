@@ -17,5 +17,9 @@ MonoBehaviour:
   upgradeCosts:
   - ressourceType: {fileID: 11400000, guid: 8a381732e0e73e74388248c7d5a3bca4, type: 2}
     delta: 0
+  - ressourceType: {fileID: 11400000, guid: 8a381732e0e73e74388248c7d5a3bca4, type: 2}
+    delta: 0
+  - ressourceType: {fileID: 11400000, guid: 8a381732e0e73e74388248c7d5a3bca4, type: 2}
+    delta: 0
   maxStorageIncrement: 50
   nextLevel: {fileID: 11400000, guid: 877a0179a80753c4585c1a59f6f5d9e6, type: 2}

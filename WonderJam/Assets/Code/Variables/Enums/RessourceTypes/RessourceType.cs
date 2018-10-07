@@ -6,4 +6,5 @@ public class RessourceType : EnumItem
     public GameEvent ressourceChangedEvent;
     public FloatVariable valueReference;
     public FloatVariable maxValueReference;
+    public Sprite associatedSprite;
 }
