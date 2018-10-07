@@ -20,6 +20,8 @@ public class CharacterController2D:MonoBehaviour
 
     public SpriteRenderer spriterenderer;
 
+    public Animator animator;
+
     [Header("Events")]
     [Space]
 
@@ -105,6 +107,8 @@ public class CharacterController2D:MonoBehaviour
 
             m_grounded = false ;
             m_rigidbody2D.AddForce(new Vector2(0f, m_jumpforce));
+
+            
 
         }
 

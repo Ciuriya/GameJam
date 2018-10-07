@@ -5,42 +5,49 @@ using UnityEngine;
 public class PlayerMouvement : MonoBehaviour
 
     {
+    public SpriteRenderer spriteRenderer;
+    public Animator animator;
 
     public bool jumprelease =false;
 
-    public float HalfJump;
+    public float halfjump;
 
-    public Rigidbody2D m_RigidBody2d;
+    public Rigidbody2D m_rigidbody2d;
 
-    public CharacterController2D controller;
+    public CharacterController2D Controller;
 
-    float horizontalmove = 1f;
+    float horizontalMove = 1f;
 
-    public float RunSpeed = 40f;
+    public float runspeed = 40f;
 
-    bool Jump = false;
+    bool jump = false;
+
+    public float Direction;
 
 	// Update is called once per frame
 void Update ()
 {
 
-        horizontalmove = (Input.GetAxisRaw("Horizontal") * RunSpeed);
+        horizontalMove = (Input.GetAxisRaw("Horizontal") * runspeed );
 
-
+  
+     
 
         if (Input.GetButtonDown("Jump"))
         {
 
-            Jump = true;
+            jump = true;
            
 
         }
-        else if(Input.GetButtonUp("Jump")&&(!controller.jumprelease))
+        else if(Input.GetButtonUp("Jump")&&(!Controller.jumprelease))
         {
 
-            m_RigidBody2d.velocity = new Vector2(0f, m_RigidBody2d.velocity.y / HalfJump);
+            m_rigidbody2d.velocity = new Vector2(0f, m_rigidbody2d.velocity.y / halfjump);
 
-            controller.jumprelease = true;
+           
+
+            Controller.jumprelease = true;
          
         }
     
@@ -49,11 +56,11 @@ void Update ()
 
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
 
-        controller.Move(horizontalmove * Time.fixedDeltaTime, Jump);
-        Jump = false;
+        Controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
+        jump = false;
 
     }
 
