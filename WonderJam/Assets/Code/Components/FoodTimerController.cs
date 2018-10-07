@@ -19,6 +19,7 @@ public class FoodTimerController : MonoBehaviour
     void Start()
     {
         lastHit = 1f;
+        unitHealth = GetComponent<UnitHealth>();
     }
 
     // Update is called once per frame
