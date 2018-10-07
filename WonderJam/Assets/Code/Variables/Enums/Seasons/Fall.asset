@@ -11,4 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c670f5b4cf354314eb804cecd2fe2899, type: 3}
   m_Name: Fall
   m_EditorClassIdentifier: 
-  nextSeason: {fileID: 0}
+  seasonStartRatio: 0.5
+  nextSeason: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
+  seasonModifiers:
+  - ressourceType: {fileID: 11400000, guid: 83cd0a4d9fc03f7478d0c243f959944e, type: 2}
+    delta: 1
+  - ressourceType: {fileID: 11400000, guid: 3fe30a9ee11c9894894c98b78b504c6f, type: 2}
+    delta: -1
