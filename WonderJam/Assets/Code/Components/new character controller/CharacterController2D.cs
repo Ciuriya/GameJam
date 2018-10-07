@@ -9,14 +9,16 @@ public class CharacterController2D:MonoBehaviour
     [SerializeField] private LayerMask m_whatisground;
     [SerializeField] private Transform m_groundcheck;
 
-    const float k_groundedradius = .2f;
-    private bool m_grounded;
+    const float k_groundedradius = .01f;
+    [HideInInspector] public bool m_grounded;
     private Rigidbody2D m_rigidbody2D;
-    private bool m_facingright = true;
+    [HideInInspector] public bool m_facingright = true;
     private Vector3 m_velocity = Vector3.zero;
 
-    public bool jumprelease;
-
+	[HideInInspector] public bool jump = false;
+	[HideInInspector] public bool jumprelease;
+	public float jumpCooldown;
+	[HideInInspector] public float lastLanding;
 
     public SpriteRenderer spriterenderer;
 
@@ -43,14 +45,16 @@ public class CharacterController2D:MonoBehaviour
 
     private void FixedUpdate()
     {
+		if (jump && m_rigidbody2D.velocity.y > 0) return;
+
         bool wasGrounded = m_grounded ;
         m_grounded = false;
 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(m_groundcheck.position, k_groundedradius, m_whatisground);
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(m_groundcheck.position, new Vector2(k_groundedradius, k_groundedradius), m_whatisground);
 
         for(int i=0;i<colliders.Length;i++)
         {
-            if(colliders[i].gameObject!=gameObject)
+            if(colliders[i].gameObject!=gameObject && colliders[i].gameObject.layer == LayerMask.NameToLayer("terrain"))
             {
 
                 m_grounded = true;
@@ -58,9 +62,10 @@ public class CharacterController2D:MonoBehaviour
                 {
                     OnLandevent.Invoke();
 
-
+					lastLanding = Time.time * 1000;
                     jumprelease = false;
 
+                    animator.SetBool("isjumping", false);
 
                 }
                     
@@ -76,14 +81,20 @@ public class CharacterController2D:MonoBehaviour
 
     }
 
-    public void Move(float move,bool jump)
+    public void Move(float move)
     {
 
 
         if(m_grounded || m_aircontrol)
         {
+            float targetX = Mathf.Clamp(m_rigidbody2D.velocity.x, -5, 5) + move * 3f;
+            if(move==0)
+            {
+                targetX = 0;
 
-            Vector3 targetVelocity = new Vector2(move * 10f, m_rigidbody2D.velocity.y);
+            }
+
+            Vector3 targetVelocity = new Vector2(targetX , m_rigidbody2D.velocity.y);
 
             m_rigidbody2D.velocity = Vector3.SmoothDamp(m_rigidbody2D.velocity, targetVelocity, ref m_velocity, m_mouvementsmoothing);
 
