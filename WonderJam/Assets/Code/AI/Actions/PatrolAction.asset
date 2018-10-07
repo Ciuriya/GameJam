@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e996700c98cb13e4aa02ebc30be3046d, type: 3}
   m_Name: PatrolAction
   m_EditorClassIdentifier: 
-  wayPointsList:
-  - {fileID: 0}
-  - {fileID: 0}
-  nextWayPoint: 0
+  points:
+  - {fileID: 4792138880478920, guid: 68cc9e7b76da2fb4486fe683bae0b578, type: 2}
+  - {fileID: 4716770221241618, guid: e9c3697439083db479be0ddc260c21aa, type: 2}
+  nextPoint: 1
