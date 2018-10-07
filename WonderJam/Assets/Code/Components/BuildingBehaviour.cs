@@ -11,6 +11,9 @@ public class BuildingBehaviour : MonoBehaviour {
 
     public bool canLevelUp()
     {
+        if (currentLevel.nextLevel == null)
+            return false;
+
         foreach (var cost in currentLevel.upgradeCosts)
         {
             if (cost.ressourceType.valueReference.Value < cost.delta)

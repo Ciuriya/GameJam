@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5feb1747ab1317e4ab417a4044dab68a, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 9d033cb99b3cb824185402cee1261a8d, type: 3}
   ressourceChangedEvent: {fileID: 11400000, guid: f6a1092de8ed8d64e85a89d2de240e2c,
     type: 2}
   valueReference: {fileID: 11400000, guid: e062ab0e091a8424eafcd46fc523e6fe, type: 2}
   maxValueReference: {fileID: 11400000, guid: 4ea98f5406a55174b86343efbf776547, type: 2}
-  associatedSprite: {fileID: 21300000, guid: 9d033cb99b3cb824185402cee1261a8d, type: 3}

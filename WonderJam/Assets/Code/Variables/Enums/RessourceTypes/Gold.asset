@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5feb1747ab1317e4ab417a4044dab68a, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: fe1e0d4659a18b240a0d84d0fcb0ca4f, type: 3}
   ressourceChangedEvent: {fileID: 11400000, guid: cec8438ce9b07ab4ea1667f0eb5695c9,
     type: 2}
   valueReference: {fileID: 11400000, guid: af57c06bf7177024eaa1fcd31499cd75, type: 2}
   maxValueReference: {fileID: 11400000, guid: 00efb1a899b381b489c27653c2fc7c83, type: 2}
-  associatedSprite: {fileID: 21300000, guid: fe1e0d4659a18b240a0d84d0fcb0ca4f, type: 3}
