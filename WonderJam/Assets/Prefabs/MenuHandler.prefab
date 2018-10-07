@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e7a28876c7b0c48a4abce5eed698b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_currentMenu: {fileID: 0}
   m_pauseEvent: {fileID: 11400000, guid: fb88fc4651c55664cb69d8be180676a7, type: 2}
   m_resumeEvent: {fileID: 11400000, guid: 2636d972bcc80d24ab7eb927c8d7538e, type: 2}
   m_onMenuChangedEvent: {fileID: 11400000, guid: 1e552ad82f10093429a87f5e6f74279e,
