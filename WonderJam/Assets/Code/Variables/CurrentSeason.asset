@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10743ab3a52f6614a984f1c840be47d5, type: 3}
-  m_Name: HPValue
+  m_Script: {fileID: 11500000, guid: 1f09b311741aad74eb9c69e1f577d364, type: 3}
+  m_Name: CurrentSeason
   m_EditorClassIdentifier: 
   m_developerDescription: 
-  m_value: 100
+  m_value: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
