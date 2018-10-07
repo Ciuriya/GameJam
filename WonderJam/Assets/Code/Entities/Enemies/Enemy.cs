@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
 		Destroy(gameObject);
 	}
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.collider.CompareTag("Enemy")&& collision.otherCollider.CompareTag("Enemy"))
         {
