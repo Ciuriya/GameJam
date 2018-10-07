@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4748364644530904}
   - component: {fileID: 114864920315438918}
   - component: {fileID: 61547265228865668}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LevelHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}

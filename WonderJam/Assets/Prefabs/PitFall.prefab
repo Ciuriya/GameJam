@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212938969279153070}
   - component: {fileID: 61696382314009198}
   - component: {fileID: 114160861032608382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PitFall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4340314576558554}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Respawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 4340314576558554}
+  pitDamage: 0
 --- !u!212 &212938969279153070
 SpriteRenderer:
   m_ObjectHideFlags: 1

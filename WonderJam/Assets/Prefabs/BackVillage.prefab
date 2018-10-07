@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4929910073054132}
   - component: {fileID: 61390372796774630}
   - component: {fileID: 114064018076861128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BackVillage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
