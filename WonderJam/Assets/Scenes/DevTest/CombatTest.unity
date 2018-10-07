@@ -651,6 +651,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: f154c58413cb1b74d88e96bbe2c1304f,
         type: 3}
+    - target: {fileID: 50760487684008846, guid: 37c10662455de884a836f9d725f6c91e,
+        type: 2}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c10662455de884a836f9d725f6c91e, type: 2}
   m_IsPrefabAsset: 0
@@ -1476,6 +1481,22 @@ Prefab:
     - target: {fileID: 4165291588101628, guid: 08abcdda17171c94696a2e7f0a6e9262, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 212444835131694200, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ded938184f58e5d44ad331ea4760922d,
+        type: 3}
+    - target: {fileID: 95164770025986598, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95164770025986598, guid: 08abcdda17171c94696a2e7f0a6e9262,
+        type: 2}
+      propertyPath: m_CullingMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08abcdda17171c94696a2e7f0a6e9262, type: 2}

@@ -65,6 +65,7 @@ public class CharacterController2D:MonoBehaviour
 					lastLanding = Time.time * 1000;
                     jumprelease = false;
 
+                    animator.SetBool("isjumping", false);
 
                 }
                     
@@ -86,8 +87,14 @@ public class CharacterController2D:MonoBehaviour
 
         if(m_grounded || m_aircontrol)
         {
+            float targetX = Mathf.Clamp(m_rigidbody2D.velocity.x, -5, 5) + move * 3f;
+            if(move==0)
+            {
+                targetX = 0;
 
-            Vector3 targetVelocity = new Vector2(Mathf.Clamp(m_rigidbody2D.velocity.x, -5, 5) + move * 3f, m_rigidbody2D.velocity.y);
+            }
+
+            Vector3 targetVelocity = new Vector2(targetX , m_rigidbody2D.velocity.y);
 
             m_rigidbody2D.velocity = Vector3.SmoothDamp(m_rigidbody2D.velocity, targetVelocity, ref m_velocity, m_mouvementsmoothing);
 

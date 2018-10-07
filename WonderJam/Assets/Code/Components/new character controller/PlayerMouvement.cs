@@ -36,13 +36,18 @@ public class PlayerMouvement : MonoBehaviour
 
 		bool jumpReady = Time.time * 1000 > Controller.lastLanding + (Controller.jumpCooldown * 1000);
 
+               
+       animator.SetFloat("speed", Mathf.Abs (m_rigidbody2d.velocity.x) );
+        
+      
 
 
-		if (Input.GetButtonDown("Jump") && jumpReady)
+        if (Input.GetButtonDown("Jump") && jumpReady)
         {
 
 			Controller.jump = true;
-           
+
+            animator.SetBool("isjumping", true);
 
         }
         else if(Input.GetButtonUp("Jump")&&(!Controller.jumprelease) && m_rigidbody2d.velocity.y > 0)
@@ -55,7 +60,7 @@ public class PlayerMouvement : MonoBehaviour
 			}
         }
 
-		if (Input.GetButtonDown("Fire1") && m_damager)
+		if (Input.GetButton("Fire1") && m_damager)
 		{
 			if (m_damager.Damage())
 				animator.SetBool("isattacking", true);
