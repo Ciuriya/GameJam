@@ -29,4 +29,12 @@ public class LevelHandler : MonoBehaviour
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            LoadRandomLevel();
+        }
+    }
 }
