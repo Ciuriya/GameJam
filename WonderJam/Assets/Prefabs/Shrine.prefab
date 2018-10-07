@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4460466729021870}
   - component: {fileID: 212798399771149504}
   - component: {fileID: 114369719722871038}
+  - component: {fileID: 114655461983902738}
+  - component: {fileID: 114750586685879750}
   m_Layer: 0
   m_Name: Shrine
   m_TagString: Untagged
@@ -35,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1524838487781950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.46, y: -0.89, z: 0}
+  m_LocalPosition: {x: -2.97, y: 4.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,10 +54,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8bcbf844f442de4c9541dc0fbc5b73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: {fileID: 0}
+  currentLevel: {fileID: 11400000, guid: 7dd3e494bf29db443b0b74619cac66a2, type: 2}
   currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
   buildingUpgratedEvent: {fileID: 11400000, guid: f95820350da50374a8cbfe3ab9112ca5,
     type: 2}
+--- !u!114 &114655461983902738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1524838487781950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840506fae7b4dca4c9a1ce0a39d019b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_summerSprite: {fileID: 21300000, guid: c9d66b95ab40fc94ab0453bd63f27584, type: 3}
+  m_winterSprite: {fileID: 21300000, guid: c9d66b95ab40fc94ab0453bd63f27584, type: 3}
+  m_currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
+  m_seasonSpring: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
+  m_seasonSummer: {fileID: 11400000, guid: 59c1022af6d0df24cb17ea0ea276339e, type: 2}
+  m_seasonFall: {fileID: 11400000, guid: db9e60cdaa437fc4999422451db3d897, type: 2}
+  m_seasonWinter: {fileID: 11400000, guid: 4e05f0e03e07a7a469ce67a61317794c, type: 2}
+--- !u!114 &114750586685879750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1524838487781950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a5f593e7e994b4682a4bfb4f2a8faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_event: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
+  m_response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114655461983902738}
+        m_MethodName: ChangeSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212798399771149504
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,12 +139,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e83d164cfe6e7a84fab2d2abe444db20, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9d66b95ab40fc94ab0453bd63f27584, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.88, y: 1.23}
+  m_Size: {x: 5, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
