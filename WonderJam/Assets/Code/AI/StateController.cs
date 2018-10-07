@@ -1,15 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class StateController : MonoBehaviour
 {
 	public State m_currentState;
 	public bool m_drawGizmos;
+    public Transform[] points;
+    public int nextPoint = 0;
+    public int distMin = 1;
+    public int MoveSpeed = 100;
 
-	[HideInInspector] public float m_stateTimeElapsed;
+    [HideInInspector] public float m_stateTimeElapsed;
 
-	private void Update()
+    private void Update()
 	{
 		m_currentState.UpdateState(this);
 	}
@@ -21,6 +26,12 @@ public class StateController : MonoBehaviour
 			m_currentState = p_nextState;
 			OnExitState();
 		}
+	}
+
+	public bool GoingRight()
+	{
+		Debug.Log((points[nextPoint].position - transform.position).x);
+		return (points[nextPoint].position - transform.position).x >= 0;
 	}
 
 	public bool CheckCountdown(float p_duration)
