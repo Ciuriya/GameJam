@@ -10,41 +10,34 @@ public class SeasonHandler : MonoBehaviour
     public int stepPerSeason = 4;
     public float ratioPerSeason = 0.25f;
 
-    private int currentStep;
+    public FloatVariable currentStep;
 
     private float ratioPerStep;
 
     void OnEnable()
     {
-        if (startingSeason != null)
-            currentSeasonVar.Value = startingSeason;
-
         ratioPerStep = ratioPerSeason / stepPerSeason;
-        currentYearRatio.Value = ratioPerStep;
-
-        UpdateYearRatio();
-        changedSeasonEvent.Raise();
     }
 
     public void Step()
     {
-        if (++currentStep >= stepPerSeason)
+        if (++currentStep.Value >= stepPerSeason)
         {
-            currentStep = 0;
+			currentStep.Value = 0;
             ForwardSeason();
         }
 
-        UpdateYearRatio();
+		UpdateYearRatio();
         changedSeasonEvent.Raise();
     }
 
     public void UpdateYearRatio()
     {
-        currentYearRatio.Value = currentSeasonVar.Value.seasonStartRatio + currentStep * ratioPerStep + ratioPerStep;
+        currentYearRatio.Value = currentSeasonVar.Value.seasonStartRatio + currentStep.Value * ratioPerStep;
     }
 
     private void ForwardSeason()
     {
-        currentSeasonVar.Value = currentSeasonVar.Value.nextSeason;  
-    }
+        currentSeasonVar.Value = currentSeasonVar.Value.nextSeason;
+	}
 }

@@ -75,6 +75,7 @@ public class PlayerMouvement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+		if (!Controller.m_grounded && Mathf.Abs(m_rigidbody2d.velocity.x) + Mathf.Abs(m_rigidbody2d.velocity.y) < 0.5) return;
 
         Controller.Move(horizontalMove * Time.fixedDeltaTime);
 		Controller.jump = false;

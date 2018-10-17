@@ -77,3 +77,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05c289adcc7dc3942831ced62d9624ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_seasonStep: {fileID: 0}

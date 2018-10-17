@@ -805,7 +805,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1524838487781950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.49, y: -0.49, z: 0}
+  m_LocalPosition: {x: -22.49, y: -0.49, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4814111244215880}
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8bcbf844f442de4c9541dc0fbc5b73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: {fileID: 11400000, guid: 7dd3e494bf29db443b0b74619cac66a2, type: 2}
+  currentLevel: {fileID: 11400000, guid: 4c876c9c3345b634da4ebf65715ae67c, type: 2}
   currentSeason: {fileID: 11400000, guid: 18e80b85ce144a54ebe0c1716e5a1662, type: 2}
   buildingUpgratedEvent: {fileID: 11400000, guid: f95820350da50374a8cbfe3ab9112ca5,
     type: 2}
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   collider: {fileID: 61277311603312754}
   tooltipRenderer: {fileID: 212697416098557012}
   icon: {fileID: 0}
-  currentLevel: {fileID: 11400000, guid: 7dd3e494bf29db443b0b74619cac66a2, type: 2}
+  currentLevel: {fileID: 11400000, guid: 4c876c9c3345b634da4ebf65715ae67c, type: 2}
 --- !u!114 &114543393182596014
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -8,7 +8,7 @@ public class InteractableBuilding : MonoBehaviour
     public SpriteRenderer tooltipRenderer;
     public Sprite icon;
 
-    public BuildingLevel currentLevel;
+    public BuildingLevelVariable currentLevel;
 
     private bool isInteracting = false;
 
@@ -51,7 +51,7 @@ public class InteractableBuilding : MonoBehaviour
 
     public void Interact()
     {
-        updaterUI.Setup(currentLevel);
+        updaterUI.Setup(currentLevel.Value);
         updaterUI.ShowForm();
     }
 

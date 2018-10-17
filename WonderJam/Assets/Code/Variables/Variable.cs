@@ -1,13 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Variable<T> : ScriptableObject
 {
-#if UNITY_EDITOR
     [Multiline, SerializeField]
     private string m_developerDescription;
-#endif
 
     [SerializeField]
     private T m_value;
@@ -15,6 +11,13 @@ public class Variable<T> : ScriptableObject
     public T Value
     {
         get { return m_value; }
-        set { m_value = value; }
+        set { m_value = value; ForceSerialization(); }
     }
+
+	void ForceSerialization()
+	{
+	#if UNITY_EDITOR
+		UnityEditor.EditorUtility.SetDirty(this);
+	#endif
+	}
 }

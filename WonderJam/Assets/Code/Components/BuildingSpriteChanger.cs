@@ -13,9 +13,9 @@ public class BuildingSpriteChanger : MonoBehaviour {
     public Season m_seasonFall;
     public Season m_seasonWinter;
 
-    private Color m_springColor = new Color(255f/255f, 155f/255f, 125f/255f);
-    private Color m_fallColor = new Color(255f/255f, 120f/255f, 115f/255f);
-    private Color m_summerColor = new Color(255f/255f, 255f/255f, 180f/255f);
+	private Color m_springColor = new Color(1f, 1f, 1f); //new Color(255f/255f, 155f/255f, 125f/255f);
+	private Color m_fallColor = new Color(255f/255f, 155f/255f, 125f/255f);//new Color(255f/255f, 120f/255f, 115f/255f);
+	private Color m_summerColor = new Color(255f/255f, 255f/255f, 180f/255f);
     private Color m_baseColor = new Color(255f/255f, 255f/255f, 255f/255f);
     private SpriteRenderer m_theSprite;
     //***WARNING THIS CODE MIGHT MAKE YOU THROW UP A LITTLE IN YOUR MOUTH***

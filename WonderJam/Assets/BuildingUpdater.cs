@@ -37,9 +37,13 @@ public class BuildingUpdater : MonoBehaviour
         oldProductionIcon.sprite = buildingLevel.ressourceGenTransaction.ressourceType.icon;
         oldCapacityIcon.sprite = buildingLevel.ressourceGenTransaction.ressourceType.icon;
 
-        newProductionIcon.sprite = buildingLevel.nextLevel.ressourceGenTransaction.ressourceType.icon;
-        newCapacityIcon.sprite = buildingLevel.ressourceGenTransaction.ressourceType.icon;
+		newCapacityIcon.sprite = buildingLevel.ressourceGenTransaction.ressourceType.icon;
 
+		if (buildingLevel.nextLevel)
+			newProductionIcon.sprite = buildingLevel.nextLevel.ressourceGenTransaction.ressourceType.icon;
+		else newProductionIcon.sprite = buildingLevel.ressourceGenTransaction.ressourceType.icon;
+        
+		
         if (!buildingLevel.isLastLevel)
         {
             goldCost.text = "" + buildingLevel.upgradeCosts[0].delta;
@@ -64,7 +68,7 @@ public class BuildingUpdater : MonoBehaviour
         upgradeButton.onClick.AddListener(delegate
         {
             behavior.LevelUp();
-            gameObject.GetComponentInParent<BuildingBehaviour>().gameObject.GetComponentInChildren<InteractableBuilding>().currentLevel = behavior.currentLevel;
+            gameObject.GetComponentInParent<BuildingBehaviour>().gameObject.GetComponentInChildren<InteractableBuilding>().currentLevel.Value = behavior.currentLevel.Value;
             HideForm();
         });
         cancelButton.onClick.AddListener(delegate { HideForm(); });

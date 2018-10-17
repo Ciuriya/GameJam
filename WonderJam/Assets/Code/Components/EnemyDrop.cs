@@ -6,6 +6,9 @@ public class EnemyDrop
 	[Tooltip("The resource to drop.")]
 	public FloatVariable m_resource;
 
+	[Tooltip("The maximum amount of the resource you can obtain.")]
+	public FloatVariable m_resourceMax;
+
 	[Tooltip("The resource event needed to update the resource value in-game.")]
 	public GameEvent m_resourceEvent;
 
@@ -22,9 +25,11 @@ public class EnemyDrop
 	{
 		if(Random.Range(0, 100) <= m_dropChance)
 		{
-			float dropAmount = Random.Range(m_minimumDropAmount, m_maximumDropAmount);
+			float resourceValue = m_resource.Value + Random.Range(m_minimumDropAmount, m_maximumDropAmount);
 
-			m_resource.Value += dropAmount;
+			if(resourceValue > m_resourceMax.Value) resourceValue = m_resourceMax.Value;
+
+			m_resource.Value = resourceValue;
 			m_resourceEvent.Raise();
 
 			return true;

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BuildingBehaviour : MonoBehaviour {
 
-    public BuildingLevel currentLevel;
+    public BuildingLevelVariable currentLevel;
     public SeasonVariable currentSeason;
     public GameEvent buildingUpgratedEvent;
 
@@ -11,10 +11,10 @@ public class BuildingBehaviour : MonoBehaviour {
 
     public bool canLevelUp()
     {
-        if (currentLevel.nextLevel == null)
+        if (currentLevel.Value.nextLevel == null)
             return false;
 
-        foreach (var cost in currentLevel.upgradeCosts)
+        foreach (var cost in currentLevel.Value.upgradeCosts)
         {
             if (cost.ressourceType.valueReference.Value < cost.delta)
                 return false;
@@ -25,19 +25,20 @@ public class BuildingBehaviour : MonoBehaviour {
 
     public bool LevelUp()
     {
-        if (currentLevel.nextLevel != null && canLevelUp())
+        if (currentLevel.Value.nextLevel != null && canLevelUp())
         {
-            List<RessourceTransaction> levelUpCosts = currentLevel.upgradeCosts;
+            List<RessourceTransaction> levelUpCosts = currentLevel.Value.upgradeCosts;
 
-            foreach (var cost in levelUpCosts)
-                ModifyRessource(cost.ressourceType, cost.delta);
+            currentLevel.Value.ressourceGenTransaction.ressourceType.maxValueReference.Value +=
+                currentLevel.Value.maxStorageIncrement;
 
-            currentLevel.ressourceGenTransaction.ressourceType.maxValueReference.Value +=
-                currentLevel.maxStorageIncrement;
+			currentLevel.Value = currentLevel.Value.nextLevel;
 
-            currentLevel = currentLevel.nextLevel;
+			foreach (var cost in levelUpCosts)
+				ModifyRessource(cost.ressourceType, cost.delta);
 
-            buildingUpgratedEvent.Raise();
+			buildingUpgratedEvent.Raise();
+			currentLevel.Value.ressourceGenTransaction.ressourceType.ressourceChangedEvent.Raise();
             return true;
         }
 
@@ -46,8 +47,8 @@ public class BuildingBehaviour : MonoBehaviour {
 
     public void GenerateRessources()
     {
-        RessourceType generationType = currentLevel.ressourceGenTransaction.ressourceType;
-        float generationQt = currentLevel.ressourceGenTransaction.delta;
+        RessourceType generationType = currentLevel.Value.ressourceGenTransaction.ressourceType;
+        float generationQt = currentLevel.Value.ressourceGenTransaction.delta;
 
         RessourceTransaction rt = currentSeason.Value.seasonModifiers.Find(sm => sm.ressourceType == generationType);
 
