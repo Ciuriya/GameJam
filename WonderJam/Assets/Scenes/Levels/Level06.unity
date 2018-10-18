@@ -600,6 +600,12 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114573991074644492, guid: 4c5bd857a3b4a5b46ad45d7fcec473fa,
+        type: 2}
+      propertyPath: chestDrops
+      value: 
+      objectReference: {fileID: 11400000, guid: 33d491072dc00b248b9df329f47a0698,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c5bd857a3b4a5b46ad45d7fcec473fa, type: 2}
   m_IsPrefabAsset: 0
@@ -9464,6 +9470,12 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 1.036
       objectReference: {fileID: 0}
+    - target: {fileID: 114573991074644492, guid: 4c5bd857a3b4a5b46ad45d7fcec473fa,
+        type: 2}
+      propertyPath: chestDrops
+      value: 
+      objectReference: {fileID: 11400000, guid: 33d491072dc00b248b9df329f47a0698,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c5bd857a3b4a5b46ad45d7fcec473fa, type: 2}
   m_IsPrefabAsset: 0

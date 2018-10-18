@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af6ea29a96031f4ab77f4b2031fff00, type: 3}
+  m_Name: SpecialChestDrop
+  m_EditorClassIdentifier: 
+  m_items:
+  - m_resource: {fileID: 11400000, guid: fa402cd8d1171204daac1ae80ad44121, type: 2}
+    m_maxResourceStorage: {fileID: 11400000, guid: 378da878d29192e468294d487e9b16df,
+      type: 2}
+    m_resourceEvent: {fileID: 11400000, guid: 49629f19cceae9c4f89ba77b7248a30d, type: 2}
+    m_dropChance: 30
+    m_minimumDropAmount: 10
+    m_maximumDropAmount: 30
+  - m_resource: {fileID: 11400000, guid: e062ab0e091a8424eafcd46fc523e6fe, type: 2}
+    m_maxResourceStorage: {fileID: 11400000, guid: 4ea98f5406a55174b86343efbf776547,
+      type: 2}
+    m_resourceEvent: {fileID: 11400000, guid: f6a1092de8ed8d64e85a89d2de240e2c, type: 2}
+    m_dropChance: 40
+    m_minimumDropAmount: 10
+    m_maximumDropAmount: 30
+  - m_resource: {fileID: 11400000, guid: af57c06bf7177024eaa1fcd31499cd75, type: 2}
+    m_maxResourceStorage: {fileID: 11400000, guid: 00efb1a899b381b489c27653c2fc7c83,
+      type: 2}
+    m_resourceEvent: {fileID: 11400000, guid: cec8438ce9b07ab4ea1667f0eb5695c9, type: 2}
+    m_dropChance: 60
+    m_minimumDropAmount: 10
+    m_maximumDropAmount: 40
+  - m_resource: {fileID: 11400000, guid: fbee40ff204fa304fb5bfa71323151b3, type: 2}
+    m_maxResourceStorage: {fileID: 11400000, guid: a838f3bbd98f96c45bb953d78d9d87d3,
+      type: 2}
+    m_resourceEvent: {fileID: 11400000, guid: 9a36421bead9bae43917076088ac4198, type: 2}
+    m_dropChance: 100
+    m_minimumDropAmount: 30
+    m_maximumDropAmount: 50

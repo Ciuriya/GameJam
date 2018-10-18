@@ -21,7 +21,7 @@ public class ChestDrop
     [Tooltip("The maximum amount of that resource that can drop.")]
     public int m_maximumDropAmount;
 
-    public void Drop()
+    public bool Drop()
     {
         if (Random.Range(0, 100) <= m_dropChance)
         {
@@ -29,7 +29,9 @@ public class ChestDrop
 
             float delta = m_maxResourceStorage.Value - m_resource.Value;
 
-            m_resource.Value += dropAmount;
+			if(delta == 0) return false;
+
+			m_resource.Value += dropAmount;
 
             if (m_resource.Value > m_maxResourceStorage.Value)
             {
@@ -37,6 +39,10 @@ public class ChestDrop
             }
 
             m_resourceEvent.Raise();
+
+			return true;
         }
+
+		return false;
     }
 }

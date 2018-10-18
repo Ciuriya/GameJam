@@ -50,7 +50,10 @@ public class InteractableChest : MonoBehaviour
 
     public void Interact()
     {
-        chestDrops.m_items.ForEach(d => d.Drop());
+		for (int i = 0; i < chestDrops.Length(); ++i)
+		{
+			if (chestDrops.m_items[i].Drop()) break;
+		}
 
         this.transform.parent.gameObject.SetActive(false);
     }

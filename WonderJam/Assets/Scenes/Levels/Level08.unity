@@ -898,6 +898,12 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: -0.002
       objectReference: {fileID: 0}
+    - target: {fileID: 114573991074644492, guid: 4c5bd857a3b4a5b46ad45d7fcec473fa,
+        type: 2}
+      propertyPath: chestDrops
+      value: 
+      objectReference: {fileID: 11400000, guid: d0ed64097abd1244abab12cc7aeac96f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c5bd857a3b4a5b46ad45d7fcec473fa, type: 2}
   m_IsPrefabAsset: 0
@@ -5912,7 +5918,7 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 10, y: -2, z: 0}
+  - first: {x: 9, y: -2, z: 0}
     second:
       m_TileIndex: 4
       m_TileSpriteIndex: 4
@@ -6116,15 +6122,6 @@ Tilemap:
       m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 15, y: -1, z: 0}
-    second:
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
@@ -6372,6 +6369,15 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 7, y: 0, z: 0}
+    second:
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 1
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 16, y: 0, z: 0}
     second:
       m_TileIndex: 4
       m_TileSpriteIndex: 4
@@ -10358,14 +10364,14 @@ CompositeCollider2D:
         Y: 0
       - X: 80000000
         Y: 0
-    - - X: 160000000
-        Y: 0
-      - X: 150000000
-        Y: 0
-      - X: 150000000
-        Y: -10000000
+    - - X: 170000000
+        Y: 10000000
       - X: 160000000
-        Y: -10000000
+        Y: 10000000
+      - X: 160000000
+        Y: 0
+      - X: 170000000
+        Y: 0
     - - X: 210000000
         Y: 0
       - X: 200000000
@@ -10390,13 +10396,13 @@ CompositeCollider2D:
         Y: -20000000
       - X: 370000000
         Y: -20000000
-    - - X: 110000000
+    - - X: 100000000
         Y: -10000000
-      - X: 100000000
+      - X: 90000000
         Y: -10000000
-      - X: 100000000
+      - X: 90000000
         Y: -20000000
-      - X: 110000000
+      - X: 100000000
         Y: -20000000
     - - X: 80000000
         Y: -20000000
@@ -10440,10 +10446,10 @@ CompositeCollider2D:
       - {x: 7, y: 1}
       - {x: 7, y: 0}
       - {x: 8, y: 0}
-    - - {x: 16, y: 0}
-      - {x: 15, y: 0}
-      - {x: 15, y: -1}
-      - {x: 16, y: -1}
+    - - {x: 17, y: 1}
+      - {x: 16, y: 1}
+      - {x: 16, y: 0}
+      - {x: 17, y: 0}
     - - {x: 21, y: 0}
       - {x: 20, y: 0}
       - {x: 20, y: -1}
@@ -10456,10 +10462,10 @@ CompositeCollider2D:
       - {x: 34, y: -1}
       - {x: 34, y: -2}
       - {x: 37, y: -2}
-    - - {x: 11, y: -1}
-      - {x: 10, y: -1}
+    - - {x: 10, y: -1}
+      - {x: 9, y: -1}
+      - {x: 9, y: -2}
       - {x: 10, y: -2}
-      - {x: 11, y: -2}
     - - {x: 8, y: -2}
       - {x: 7, y: -2}
       - {x: 7, y: -3}

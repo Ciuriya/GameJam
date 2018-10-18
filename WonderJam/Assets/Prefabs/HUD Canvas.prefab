@@ -744,7 +744,8 @@ MonoBehaviour:
   currentYearRatio: {fileID: 11400000, guid: 17af74252851d5241bf2a4c35ac7f66a, type: 2}
   startingSeason: {fileID: 11400000, guid: 9492a68393c63fa45844d7ca013dae38, type: 2}
   changedSeasonEvent: {fileID: 11400000, guid: 6040dfce12b01ce4a8f93c611dd56196, type: 2}
-  stepPerSeason: 3
+  yearEndEvent: {fileID: 11400000, guid: 0be1f0b0c9cf82c41bf43e67214f82e1, type: 2}
+  stepPerSeason: 6
   ratioPerSeason: 0.25
   currentStep: {fileID: 11400000, guid: 648972c9540fdff4aa4bfd3dfe45e54e, type: 2}
 --- !u!114 &114258608861110668

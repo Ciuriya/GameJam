@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ressourceGenTransaction:
     ressourceType: {fileID: 11400000, guid: 83cd0a4d9fc03f7478d0c243f959944e, type: 2}
-    delta: 10
+    delta: 20
   upgradeCosts:
   - ressourceType: {fileID: 11400000, guid: 8a381732e0e73e74388248c7d5a3bca4, type: 2}
-    delta: 0
+    delta: 35
   - ressourceType: {fileID: 11400000, guid: 329f86f4190990541b0334259f6da7ec, type: 2}
     delta: 0
   - ressourceType: {fileID: 11400000, guid: 3fe30a9ee11c9894894c98b78b504c6f, type: 2}
-    delta: 0
-  maxStorageIncrement: 50
+    delta: 50
+  maxStorageIncrement: 25
   nextLevel: {fileID: 11400000, guid: 877a0179a80753c4585c1a59f6f5d9e6, type: 2}
   isLastLevel: 0

@@ -33,7 +33,7 @@ public class FoodTimerController : MonoBehaviour
 			currentFood.m_variable.Value -= 5f;
 			updateEvent.Raise();
 
-			if (currentFood.Value < 0)
+			if (currentFood.m_variable.Value < 0)
 			{
 				currentFood.m_variable.Value = 0;
 			}

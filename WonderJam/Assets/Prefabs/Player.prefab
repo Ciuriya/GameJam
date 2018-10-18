@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114211677530017188}
   - component: {fileID: 114026242776114662}
   - component: {fileID: 114430773509398554}
-  - component: {fileID: 114515063968008054}
+  - component: {fileID: 114229676383073616}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -74,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1453273023913008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.5, z: 0}
+  m_LocalPosition: {x: -10.3, y: -1.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4938054360127726}
@@ -89,7 +89,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1762642658631008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.035, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4165291588101628}
@@ -239,6 +239,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_nextScene: Menu
+--- !u!114 &114229676383073616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1453273023913008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3f33431988d04cabe54c463f9973f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lostHealthPerSecond: 0.05
+  baseFoodLost: 2.5
+  updateEvent: {fileID: 11400000, guid: 9a36421bead9bae43917076088ac4198, type: 2}
+  currentFood:
+    m_useConstant: 0
+    m_constantValue: 0
+    m_variable: {fileID: 11400000, guid: fbee40ff204fa304fb5bfa71323151b3, type: 2}
+  maxHealth:
+    m_useConstant: 0
+    m_constantValue: 0
+    m_variable: {fileID: 11400000, guid: dfd05abe95e80244f80da8aa4e9bbbe4, type: 2}
 --- !u!114 &114430773509398554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -256,28 +278,6 @@ MonoBehaviour:
   Controller: {fileID: 114026242776114662}
   runspeed: 40
   Direction: 0
---- !u!114 &114515063968008054
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453273023913008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f3f33431988d04cabe54c463f9973f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lostHealthPerSecond: 0.05
-  baseFoodLost: 3
-  updateEvent: {fileID: 11400000, guid: 9a36421bead9bae43917076088ac4198, type: 2}
-  currentFood:
-    m_useConstant: 0
-    m_constantValue: 0
-    m_variable: {fileID: 11400000, guid: fbee40ff204fa304fb5bfa71323151b3, type: 2}
-  maxHealth:
-    m_useConstant: 0
-    m_constantValue: 0
-    m_variable: {fileID: 11400000, guid: dfd05abe95e80244f80da8aa4e9bbbe4, type: 2}
 --- !u!114 &114564183750742634
 MonoBehaviour:
   m_ObjectHideFlags: 1

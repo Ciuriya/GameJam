@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: FoodMaxStorage
   m_EditorClassIdentifier: 
   m_developerDescription: 
-  m_value: 250
+  m_value: 100

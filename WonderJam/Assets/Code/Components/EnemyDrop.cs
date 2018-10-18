@@ -29,6 +29,8 @@ public class EnemyDrop
 
 			if(resourceValue > m_resourceMax.Value) resourceValue = m_resourceMax.Value;
 
+			if(m_resource.Value - resourceValue == 0) return false;
+
 			m_resource.Value = resourceValue;
 			m_resourceEvent.Raise();
 

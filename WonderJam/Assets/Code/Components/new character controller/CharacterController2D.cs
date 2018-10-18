@@ -9,7 +9,7 @@ public class CharacterController2D:MonoBehaviour
     [SerializeField] private LayerMask m_whatisground;
     [SerializeField] private Transform m_groundcheck;
 
-    const float k_groundedradius = .01f;
+    const float k_groundedradius = .23f;
     [HideInInspector] public bool m_grounded;
     private Rigidbody2D m_rigidbody2D;
     [HideInInspector] public bool m_facingright = true;

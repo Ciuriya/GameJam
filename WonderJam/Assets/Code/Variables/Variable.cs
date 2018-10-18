@@ -16,8 +16,8 @@ public class Variable<T> : ScriptableObject
 
 	void ForceSerialization()
 	{
-	#if UNITY_EDITOR
-		UnityEditor.EditorUtility.SetDirty(this);
-	#endif
+	//#if UNITY_EDITOR
+		//UnityEditor.EditorUtility.SetDirty(this);
+	//#endif
 	}
 }

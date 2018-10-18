@@ -10,6 +10,8 @@ public class ResetHandler : MonoBehaviour
 	public GameEventRuntimeSet m_eventsToRaise;
 	public ResetFloatRuntimeSet m_floatsToReset;
 	public ResetBuildingLevelRuntimeSet m_buildingsToReset;
+	public ResetBuildingLevelRuntimeSet m_buildingsToLoad;
+	public bool m_resetPrefs;
 	public List<AbsRuntimeSet> m_setsToReset;
 
 	void Start()
@@ -50,6 +52,8 @@ public class ResetHandler : MonoBehaviour
 			}
 		}
 
+		LoadLevels();
+
 		if (m_eventsToRaise)
 		{
 			for (int i = 0; i < m_eventsToRaise.Length(); ++i)
@@ -58,6 +62,29 @@ public class ResetHandler : MonoBehaviour
 
 				gameEvent.Raise();
 			}
+		}
+	}
+
+	void LoadLevels()
+	{
+		if(m_resetPrefs)
+		{
+			PlayerPrefs.DeleteAll();
+		}
+
+		if(!m_buildingsToLoad) return;
+
+		for (int i = 0; i < m_buildingsToLoad.Length(); ++i)
+		{
+			int level = PlayerPrefs.GetInt(m_buildingsToLoad.m_items[i].m_variable.name.Substring(0, 4), 0);
+			BuildingLevel current = m_buildingsToLoad.m_items[i].m_resetTo;
+
+			for(int j = 0; j < level; ++j)
+			{
+				current = current.nextLevel;
+			}
+
+			m_buildingsToLoad.m_items[i].m_variable.Value = current;
 		}
 	}
 }

@@ -6,6 +6,7 @@ public class SeasonHandler : MonoBehaviour
     public FloatVariable currentYearRatio;
     public Season startingSeason;
     public GameEvent changedSeasonEvent;
+	public GameEvent yearEndEvent;
 
     public int stepPerSeason = 4;
     public float ratioPerSeason = 0.25f;
@@ -28,8 +29,8 @@ public class SeasonHandler : MonoBehaviour
         }
 
 		UpdateYearRatio();
-        changedSeasonEvent.Raise();
-    }
+		changedSeasonEvent.Raise();
+	}
 
     public void UpdateYearRatio()
     {
@@ -38,6 +39,10 @@ public class SeasonHandler : MonoBehaviour
 
     private void ForwardSeason()
     {
+		bool isLastSeason = currentSeasonVar.Value.isLastSeason;
+
         currentSeasonVar.Value = currentSeasonVar.Value.nextSeason;
+
+		if(isLastSeason) yearEndEvent.Raise();
 	}
 }

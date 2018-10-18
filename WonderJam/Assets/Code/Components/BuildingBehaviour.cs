@@ -35,7 +35,7 @@ public class BuildingBehaviour : MonoBehaviour {
 			currentLevel.Value = currentLevel.Value.nextLevel;
 
 			foreach (var cost in levelUpCosts)
-				ModifyRessource(cost.ressourceType, cost.delta);
+				ModifyRessource(cost.ressourceType, -cost.delta);
 
 			buildingUpgratedEvent.Raise();
 			currentLevel.Value.ressourceGenTransaction.ressourceType.ressourceChangedEvent.Raise();
@@ -61,6 +61,8 @@ public class BuildingBehaviour : MonoBehaviour {
         // If delta value make your value bust, it assign max value 
         type.valueReference.Value = (type.valueReference.Value + delta > type.maxValueReference.Value) ?
             type.maxValueReference.Value : type.valueReference.Value + delta;
+
+		if(type.valueReference.Value < 0) type.valueReference.Value = 0;
 
         type.ressourceChangedEvent.Raise();
     }

@@ -32,8 +32,8 @@ public class BuildingUpdater : MonoBehaviour
 
     public void Setup(BuildingLevel buildingLevel)
     {
-        oldProduction.text = "" + buildingLevel.ressourceGenTransaction.delta;
-        oldCapacity.text = "" + buildingLevel.ressourceGenTransaction.ressourceType.maxValueReference.Value;
+        oldProduction.text = "" + buildingLevel.ressourceGenTransaction.delta ?? "---";
+        oldCapacity.text = "" + buildingLevel.ressourceGenTransaction.ressourceType.maxValueReference.Value ?? "---";
         oldProductionIcon.sprite = buildingLevel.ressourceGenTransaction.ressourceType.icon;
         oldCapacityIcon.sprite = buildingLevel.ressourceGenTransaction.ressourceType.icon;
 
@@ -50,9 +50,9 @@ public class BuildingUpdater : MonoBehaviour
             stoneCost.text = "" + buildingLevel.upgradeCosts[1].delta;
             woodCost.text = "" + buildingLevel.upgradeCosts[2].delta;
 
-            newProduction.text = "" + buildingLevel.nextLevel.ressourceGenTransaction.delta;
+            newProduction.text = "" + buildingLevel.nextLevel.ressourceGenTransaction.delta ?? "---";
             newCapacity.text = "" + (buildingLevel.ressourceGenTransaction.ressourceType.maxValueReference.Value +
-                buildingLevel.maxStorageIncrement);
+                buildingLevel.maxStorageIncrement) ?? "---";
         }
         else
         {

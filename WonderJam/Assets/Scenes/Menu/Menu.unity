@@ -4268,6 +4268,8 @@ MonoBehaviour:
   m_eventsToRaise: {fileID: 0}
   m_floatsToReset: {fileID: 11400000, guid: 22d29e1f21473db4dbe3da5f0ab24d4d, type: 2}
   m_buildingsToReset: {fileID: 11400000, guid: 79241c5f2dc0e8e46a56139ec7ac001d, type: 2}
+  m_buildingsToLoad: {fileID: 0}
+  m_resetPrefs: 1
   m_setsToReset: []
 --- !u!4 &880413604
 Transform:
