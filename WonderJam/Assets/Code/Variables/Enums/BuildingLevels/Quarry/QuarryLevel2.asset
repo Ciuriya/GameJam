@@ -20,7 +20,7 @@ MonoBehaviour:
   - ressourceType: {fileID: 11400000, guid: 329f86f4190990541b0334259f6da7ec, type: 2}
     delta: 0
   - ressourceType: {fileID: 11400000, guid: 3fe30a9ee11c9894894c98b78b504c6f, type: 2}
-    delta: 200
+    delta: 150
   maxStorageIncrement: 300
   nextLevel: {fileID: 11400000, guid: cb990c4d43b9b0f4689ff25a1742615b, type: 2}
-  isLastLevel: 1
+  isLastLevel: 0
